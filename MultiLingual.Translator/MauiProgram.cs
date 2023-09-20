@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Components.WebView.Maui;
-using MultiLingual.Translator.Data;
+﻿using MultiLingual.Translator.Data;
 
 namespace MultiLingual.Translator;
 

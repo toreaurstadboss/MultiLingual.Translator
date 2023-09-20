@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.19" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Azure.AI.TextAnalytics" Version="5.3.0" />
+		<!--<PackageReference Include="HtmlAgilityPack" Version="1.11.52" />-->
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.19" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\" />
+	</ItemGroup>
+
+</Project>
