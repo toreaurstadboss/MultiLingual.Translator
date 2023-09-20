@@ -3,7 +3,7 @@
 namespace MultiLingual.Translator.Lib
 {
 
-    public class DetectLanguageUtil
+    public class DetectLanguageUtil : IDetectLanguageUtil
     {
 
         private TextAnalyticsClient _client;
@@ -56,7 +56,7 @@ namespace MultiLingual.Translator.Lib
             DetectedLanguage detectedLanguage = await DetectLanguage(inputText);
             return detectedLanguage.ConfidenceScore;
         }
-      
+
     }
 
 }

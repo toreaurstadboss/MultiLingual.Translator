@@ -1,4 +1,4 @@
-﻿using MultiLingual.Translator.Data;
+﻿using MultiLingual.Translator.Lib;
 
 namespace MultiLingual.Translator;
 
@@ -18,9 +18,10 @@ public static class MauiProgram
 		#if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
-		
-		builder.Services.AddSingleton<WeatherForecastService>();
 
-		return builder.Build();
+		builder.Services.AddScoped<IDetectLanguageUtil, DetectLanguageUtil>();
+        builder.Services.AddScoped<ITranslateUtil, TranslateUtil>();
+
+        return builder.Build();
 	}
 }

@@ -4,13 +4,14 @@ using MultiLingual.Translator.Lib.Models;
 namespace MultiLingual.Translator.Lib
 {
 
-    public class TranslateUtil
+    public class TranslateUtil : ITranslateUtil
     {
-        private TextTranslationClient _client; 
+        private TextTranslationClient _client;
 
 
-        public TranslateUtil() { 
-            _client = TextAnalyticsClientFactory.CreateTranslateClient(); 
+        public TranslateUtil()
+        {
+            _client = TextAnalyticsClientFactory.CreateTranslateClient();
         }
 
         /// <summary>

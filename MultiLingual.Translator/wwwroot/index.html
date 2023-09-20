@@ -24,6 +24,22 @@
 
 	<script src="_framework/blazor.webview.js" autostart="false"></script>
 
+	<script type="text/javascript">
+		window.exampleJsFunctions =
+		{
+			focusElement: function (elementId) {
+
+				var el = document.getElementById(elementId);
+				console.log(el);
+
+				if (!!el) {
+					console.log('trying to set focus');
+					el.focus();
+				}
+			}
+		};
+	</script>
+
 </body>
 
 </html>
