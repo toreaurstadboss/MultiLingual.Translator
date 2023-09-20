@@ -8,6 +8,7 @@
 
         public string DetectedLanguageIso6391 { get; set; }
 
+        public string TargetLanguage { get; set; }
 
         public string TranslatedText { get; set; }
 

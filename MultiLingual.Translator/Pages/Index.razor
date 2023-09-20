@@ -25,10 +25,25 @@
             <img src="@FlagIcon" class="flagIcon" />
         }
     </div>
+    <br />
+    
+    <div class="form-group row">
+        <span>Translate into language</span>
+        <InputSelect placeholder="Choose the target language"  @bind-Value="Model!.TargetLanguage">
+            @foreach (var item in LanguageCodes){
+                <option value="@item.Value">@item.Name</option>
+            }
+        </InputSelect>
+        <br />
+          @if (Model.TargetLanguage != null){
+            <img src="@TargetFlagIcon" class="flagIcon" />
+        }
+    </div>
+    <br />
 
     <div class="form-group row">
-        <span>Translation to English</span>
-        <InputTextArea readonly="readonly" placeholder="The translated text into English" @bind-Value="Model!.TranslatedText" rows="5"></InputTextArea>
+        <span>Translation</span>
+        <InputTextArea readonly="readonly" placeholder="The translated text target language" @bind-Value="Model!.TranslatedText" rows="5"></InputTextArea>
     </div>
 
     <button type="submit" class="submitButton">Submit</button>
@@ -49,6 +64,19 @@
         }
     }
 
+    private string TargetFlagIcon {
+        get
+        {
+            return $"images/flags/png100px/{Model.TargetLanguage}.png";
+        }
+    }
+
+    private List<NameValue> LanguageCodes = typeof(LanguageCode).GetFields().Select(f => new NameValue {
+	 Name = f.Name,
+	 Value = f.GetValue(f)?.ToString(),
+	}).OrderBy(f => f.Name).ToList();
+
+
     private async void Submit()
     {
         var detectedLanguage = await DetectLangUtil.DetectLanguage(Model.InputText);
@@ -58,7 +86,7 @@
         {
             _client = TextAnalyticsClientFactory.CreateClient();
         }
-        Model.TranslatedText = await TransUtil.Translate(LanguageCode.English, Model.InputText, detectedLanguage.Iso6391Name);
+        Model.TranslatedText = await TransUtil.Translate(Model.TargetLanguage, Model.InputText, detectedLanguage.Iso6391Name);
 
         StateHasChanged();
     }
@@ -67,7 +95,9 @@
     {
         if (firstRender)
         {
+            Model.TargetLanguage = LanguageCode.English;
             await JS.InvokeVoidAsync("exampleJsFunctions.focusElement", inputTextRef?.AdditionalAttributes.FirstOrDefault(a => a.Key?.ToLower() == "id").Value);
+            StateHasChanged();
         }
     }
 
