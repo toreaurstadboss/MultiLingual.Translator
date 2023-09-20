@@ -22,12 +22,12 @@ namespace MultiLingual.Translator.Lib
         /// <returns></returns>
         public async Task<string?> Translate(string targetLanguage, string inputText, string? sourceLanguage = null)
         {
-            var detectedLanguage = await _client.TranslateAsync(targetLanguage, inputText, sourceLanguage);
-            if (detectedLanguage?.Value == null)
+            var translationOfText = await _client.TranslateAsync(targetLanguage, inputText, sourceLanguage);
+            if (translationOfText?.Value == null)
             {
                 return null;
             }
-            var translation = detectedLanguage.Value.SelectMany(l => l.Translations).Select(l => l.Text)?.ToList();
+            var translation = translationOfText.Value.SelectMany(l => l.Translations).Select(l => l.Text)?.ToList();
             string? translationText = translation?.FlattenString();
             return translationText;
         }
