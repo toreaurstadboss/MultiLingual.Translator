@@ -315,4 +315,8 @@
 	  <None Include="wwwroot\images\flags\png100px\zw.png" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="Plugin.Maui.Audio" Version="2.0.0" />
+	</ItemGroup>
+
 </Project>

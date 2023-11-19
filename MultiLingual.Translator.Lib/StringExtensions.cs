@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.Runtime.InteropServices;
+using System.Security;
+using System.Text;
 
 namespace MultiLingual.Translator.Lib
 {
@@ -23,6 +25,23 @@ namespace MultiLingual.Translator.Lib
                 sb => sb.ToString().Trim());
 
             return flattenedString;
+        }
+
+        public static SecureString ToSecureString(this string input)
+        {
+            SecureString secureString = new SecureString();
+            foreach (var item in input)
+            {
+                secureString.AppendChar(item);
+            }
+            return secureString;
+        }
+        public static string ToNormalString(this SecureString input)
+        {
+            IntPtr strptr = Marshal.SecureStringToBSTR(input);
+            string normal = Marshal.PtrToStringBSTR(strptr);
+            Marshal.ZeroFreeBSTR(strptr);
+            return normal;
         }
 
     }

@@ -20,6 +20,10 @@ namespace MultiLingual.Translator.Lib
         /// <remarks> <see cref="Models.LanguageCode" /> contains the language code list of languages supported</remarks>
         public async Task<DetectedLanguage> DetectLanguage(string inputText)
         {
+            if (string.IsNullOrWhiteSpace(inputText))
+            {
+                return await Task.FromResult(new DetectedLanguage { });
+            }
             DetectedLanguage detectedLanguage = await _client.DetectLanguageAsync(inputText);
             return detectedLanguage;
         }
