@@ -13,21 +13,31 @@ namespace MultiLingual.Translator.Lib
             _configuration = configuration;
         }
 
-        public async Task<byte[]> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices)
+        public async Task<TextToSpeechResult> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices)
         {
-            string xml = GetSpeechTextXml(text, language, actorVoices);
+            var result = new TextToSpeechResult();
+
+            result.Transcript = GetSpeechTextXml(text, language, actorVoices, result);
+            result.ContentType = _configuration[TextToSpeechSpeechContentType];
+            result.OutputFormat = _configuration[TextToSpeechSpeechXMicrosoftOutputFormat];
+            result.UserAgent = _configuration[TextToSpeechSpeechUserAgent];
+            result.AvailableVoiceActorIds = ResolveAvailableActorVoiceIds(language, actorVoices);
+            result.LanguageCode = language;
+
             string? token = await GetUpdatedToken();
 
             HttpClient httpClient = GetTextToSpeechWebClient(token);
 
             string ttsEndpointUrl = _configuration[TextToSpeechSpeechEndpoint];
-            var response = await httpClient.PostAsync(ttsEndpointUrl, new StringContent(xml, Encoding.UTF8, _configuration[TextToSpeechSpeechContentType]));
+            var response = await httpClient.PostAsync(ttsEndpointUrl, new StringContent(result.Transcript, Encoding.UTF8, result.ContentType));
 
             using (var memStream = new MemoryStream()) {
                 var responseStream = await response.Content.ReadAsStreamAsync();
                 responseStream.CopyTo(memStream);
-                return memStream.ToArray();
+                result.VoiceData = memStream.ToArray();
             }
+
+            return result;
         }
 
         private async Task<string?> GetUpdatedToken()
@@ -50,16 +60,26 @@ namespace MultiLingual.Translator.Lib
             return httpClient;
         }
        
-        private string GetSpeechTextXml(string text, string language, TextToSpeechLanguage[] actorVoices)
+        private string GetSpeechTextXml(string text, string language, TextToSpeechLanguage[] actorVoices, TextToSpeechResult result)
         {
-            string voiceActorId = ResolveVoiceActorId(language, actorVoices);
+            result.VoiceActorId = ResolveVoiceActorId(language, actorVoices);
             string speechXml = $@"
             <speak version='1.0' xml:lang='en-US'>
-                <voice xml:lang='en-US' xml:gender='Male' name='Microsoft Server Speech Text to Speech Voice {voiceActorId}'>
+                <voice xml:lang='en-US' xml:gender='Male' name='Microsoft Server Speech Text to Speech Voice {result.VoiceActorId}'>
                     <prosody rate='1'>{text}</prosody>
                 </voice>
             </speak>";
             return speechXml;               
+        }
+
+        private List<string> ResolveAvailableActorVoiceIds(string language, TextToSpeechLanguage[] actorVoices)
+        {
+            if (actorVoices?.Any() == true)
+            {
+                var voiceActorIds = actorVoices.Where(v => v.LanguageKey == language || v.LanguageKey.Split("-")[0] == language).SelectMany(v => v.VoiceActors).Select(v => v.VoiceId).ToList();
+                return voiceActorIds;
+            }
+            return new List<string>();
         }
 
         private string ResolveVoiceActorId(string language, TextToSpeechLanguage[] actorVoices)

@@ -4,6 +4,6 @@ namespace MultiLingual.Translator.Lib
 {
     public interface ITextToSpeechUtil
     {
-        Task<byte[]> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices);
+        Task<TextToSpeechResult> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices);
     }
 }

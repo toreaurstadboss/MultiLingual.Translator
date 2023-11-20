@@ -12,5 +12,7 @@
 
         public string TranslatedText { get; set; }
 
+        public string ActiveVoiceActorId { get; set; }
+
     }
 }
