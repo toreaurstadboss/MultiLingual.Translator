@@ -1,0 +1,3117 @@
+[
+  {
+    "LanguageKey": "af-ZA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "af-ZA-AdriNeural2",
+        "VoiceId": "(af-ZA, AdriNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "af-ZA-WillemNeural2",
+        "VoiceId": "(af-ZA, WillemNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "am-ET",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "am-ET-MekdesNeural2",
+        "VoiceId": "(am-ET, MekdesNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "am-ET-AmehaNeural2",
+        "VoiceId": "(am-ET, AmehaNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-AE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-AE-FatimaNeural",
+        "VoiceId": "(ar-AE, FatimaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-AE-HamdanNeural",
+        "VoiceId": "(ar-AE, HamdanNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-BH",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-BH-LailaNeural",
+        "VoiceId": "(ar-BH, LailaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-BH-AliNeural",
+        "VoiceId": "(ar-BH, AliNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-DZ",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-DZ-AminaNeural",
+        "VoiceId": "(ar-DZ, AminaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-DZ-IsmaelNeural",
+        "VoiceId": "(ar-DZ, IsmaelNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-EG",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-EG-SalmaNeural",
+        "VoiceId": "(ar-EG, SalmaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-EG-ShakirNeural",
+        "VoiceId": "(ar-EG, ShakirNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-IQ",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-IQ-RanaNeural",
+        "VoiceId": "(ar-IQ, RanaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-IQ-BasselNeural",
+        "VoiceId": "(ar-IQ, BasselNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-JO",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-JO-SanaNeural",
+        "VoiceId": "(ar-JO, SanaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-JO-TaimNeural",
+        "VoiceId": "(ar-JO, TaimNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-KW",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-KW-NouraNeural",
+        "VoiceId": "(ar-KW, NouraNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-KW-FahedNeural",
+        "VoiceId": "(ar-KW, FahedNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-LB",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-LB-LaylaNeural",
+        "VoiceId": "(ar-LB, LaylaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-LB-RamiNeural",
+        "VoiceId": "(ar-LB, RamiNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-LY",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-LY-ImanNeural",
+        "VoiceId": "(ar-LY, ImanNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-LY-OmarNeural",
+        "VoiceId": "(ar-LY, OmarNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-MA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-MA-MounaNeural",
+        "VoiceId": "(ar-MA, MounaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-MA-JamalNeural",
+        "VoiceId": "(ar-MA, JamalNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-OM",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-OM-AyshaNeural",
+        "VoiceId": "(ar-OM, AyshaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-OM-AbdullahNeural",
+        "VoiceId": "(ar-OM, AbdullahNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-QA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-QA-AmalNeural",
+        "VoiceId": "(ar-QA, AmalNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-QA-MoazNeural",
+        "VoiceId": "(ar-QA, MoazNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-SA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-SA-ZariyahNeural",
+        "VoiceId": "(ar-SA, ZariyahNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-SA-HamedNeural",
+        "VoiceId": "(ar-SA, HamedNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-SY",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-SY-AmanyNeural",
+        "VoiceId": "(ar-SY, AmanyNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-SY-LaithNeural",
+        "VoiceId": "(ar-SY, LaithNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-TN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-TN-ReemNeural",
+        "VoiceId": "(ar-TN, ReemNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-TN-HediNeural",
+        "VoiceId": "(ar-TN, HediNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ar-YE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ar-YE-MaryamNeural",
+        "VoiceId": "(ar-YE, MaryamNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ar-YE-SalehNeural",
+        "VoiceId": "(ar-YE, SalehNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "az-AZ",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "az-AZ-BanuNeural2",
+        "VoiceId": "(az-AZ, BanuNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "az-AZ-BabekNeural2",
+        "VoiceId": "(az-AZ, BabekNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "bg-BG",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "bg-BG-KalinaNeural",
+        "VoiceId": "(bg-BG, KalinaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "bg-BG-BorislavNeural",
+        "VoiceId": "(bg-BG, BorislavNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "bn-BD",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "bn-BD-NabanitaNeural2",
+        "VoiceId": "(bn-BD, NabanitaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "bn-BD-PradeepNeural2",
+        "VoiceId": "(bn-BD, PradeepNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "bn-IN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "bn-IN-TanishaaNeural2",
+        "VoiceId": "(bn-IN, TanishaaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "bn-IN-BashkarNeural2",
+        "VoiceId": "(bn-IN, BashkarNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "bs-BA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "bs-BA-VesnaNeural2",
+        "VoiceId": "(bs-BA, VesnaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "bs-BA-GoranNeural2",
+        "VoiceId": "(bs-BA, GoranNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ca-ES",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ca-ES-JoanaNeural",
+        "VoiceId": "(ca-ES, JoanaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ca-ES-EnricNeural",
+        "VoiceId": "(ca-ES, EnricNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "ca-ES-AlbaNeural",
+        "VoiceId": "(ca-ES, AlbaNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "cs-CZ",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "cs-CZ-VlastaNeural",
+        "VoiceId": "(cs-CZ, VlastaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "cs-CZ-AntoninNeural",
+        "VoiceId": "(cs-CZ, AntoninNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "cy-GB",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "cy-GB-NiaNeural2",
+        "VoiceId": "(cy-GB, NiaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "cy-GB-AledNeural2",
+        "VoiceId": "(cy-GB, AledNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "da-DK",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "da-DK-ChristelNeural",
+        "VoiceId": "(da-DK, ChristelNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "da-DK-JeppeNeural",
+        "VoiceId": "(da-DK, JeppeNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "de-AT",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-AT-IngridNeural",
+        "VoiceId": "(de-AT, IngridNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "de-AT-JonasNeural",
+        "VoiceId": "(de-AT, JonasNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "de-CH",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-CH-LeniNeural",
+        "VoiceId": "(de-CH, LeniNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "de-CH-JanNeural",
+        "VoiceId": "(de-CH, JanNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "de-DE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-DE-KatjaNeural",
+        "VoiceId": "(de-DE, KatjaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "de-DE-ConradNeural1",
+        "VoiceId": "(de-DE, ConradNeural1)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-DE-AmalaNeural",
+        "VoiceId": "(de-DE, AmalaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "de-DE-BerndNeural",
+        "VoiceId": "(de-DE, BerndNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "de-DE-ChristophNeural",
+        "VoiceId": "(de-DE, ChristophNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-DE-ElkeNeural",
+        "VoiceId": "(de-DE, ElkeNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-DE-GiselaNeural",
+        "VoiceId": "(de-DE, GiselaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "de-DE-KasperNeural",
+        "VoiceId": "(de-DE, KasperNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "de-DE-KillianNeural",
+        "VoiceId": "(de-DE, KillianNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-DE-KlarissaNeural",
+        "VoiceId": "(de-DE, KlarissaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "de-DE-KlausNeural",
+        "VoiceId": "(de-DE, KlausNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-DE-LouisaNeural",
+        "VoiceId": "(de-DE, LouisaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-DE-MajaNeural",
+        "VoiceId": "(de-DE, MajaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "de-DE-RalfNeural",
+        "VoiceId": "(de-DE, RalfNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-DE-SeraphinaNeural",
+        "VoiceId": "(de-DE, SeraphinaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "de-DE-TanjaNeural",
+        "VoiceId": "(de-DE, TanjaNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "el-GR",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "el-GR-AthinaNeural",
+        "VoiceId": "(el-GR, AthinaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "el-GR-NestorasNeural",
+        "VoiceId": "(el-GR, NestorasNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-AU",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-AU-NatashaNeural",
+        "VoiceId": "(en-AU, NatashaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-AU-WilliamNeural",
+        "VoiceId": "(en-AU, WilliamNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-AU-AnnetteNeural",
+        "VoiceId": "(en-AU, AnnetteNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-AU-CarlyNeural",
+        "VoiceId": "(en-AU, CarlyNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-AU-DarrenNeural",
+        "VoiceId": "(en-AU, DarrenNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-AU-DuncanNeural",
+        "VoiceId": "(en-AU, DuncanNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-AU-ElsieNeural",
+        "VoiceId": "(en-AU, ElsieNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-AU-FreyaNeural",
+        "VoiceId": "(en-AU, FreyaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-AU-JoanneNeural",
+        "VoiceId": "(en-AU, JoanneNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-AU-KenNeural",
+        "VoiceId": "(en-AU, KenNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-AU-KimNeural",
+        "VoiceId": "(en-AU, KimNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-AU-NeilNeural",
+        "VoiceId": "(en-AU, NeilNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-AU-TimNeural",
+        "VoiceId": "(en-AU, TimNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-AU-TinaNeural",
+        "VoiceId": "(en-AU, TinaNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-CA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-CA-ClaraNeural",
+        "VoiceId": "(en-CA, ClaraNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-CA-LiamNeural",
+        "VoiceId": "(en-CA, LiamNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-GB",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-GB-SoniaNeural",
+        "VoiceId": "(en-GB, SoniaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-GB-RyanNeural",
+        "VoiceId": "(en-GB, RyanNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-GB-LibbyNeural",
+        "VoiceId": "(en-GB, LibbyNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-GB-AbbiNeural",
+        "VoiceId": "(en-GB, AbbiNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-GB-AlfieNeural",
+        "VoiceId": "(en-GB, AlfieNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-GB-BellaNeural",
+        "VoiceId": "(en-GB, BellaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-GB-ElliotNeural",
+        "VoiceId": "(en-GB, ElliotNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-GB-EthanNeural",
+        "VoiceId": "(en-GB, EthanNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-GB-HollieNeural",
+        "VoiceId": "(en-GB, HollieNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-GB-MaisieNeural",
+        "VoiceId": "(en-GB, MaisieNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-GB-NoahNeural",
+        "VoiceId": "(en-GB, NoahNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-GB-OliverNeural",
+        "VoiceId": "(en-GB, OliverNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-GB-OliviaNeural",
+        "VoiceId": "(en-GB, OliviaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-GB-ThomasNeural",
+        "VoiceId": "(en-GB, ThomasNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-HK",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-HK-YanNeural",
+        "VoiceId": "(en-HK, YanNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-HK-SamNeural",
+        "VoiceId": "(en-HK, SamNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-IE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-IE-EmilyNeural",
+        "VoiceId": "(en-IE, EmilyNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-IE-ConnorNeural",
+        "VoiceId": "(en-IE, ConnorNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-IN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-IN-NeerjaNeural",
+        "VoiceId": "(en-IN, NeerjaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-IN-PrabhatNeural",
+        "VoiceId": "(en-IN, PrabhatNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-KE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-KE-AsiliaNeural",
+        "VoiceId": "(en-KE, AsiliaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-KE-ChilembaNeural",
+        "VoiceId": "(en-KE, ChilembaNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-NG",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-NG-EzinneNeural",
+        "VoiceId": "(en-NG, EzinneNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-NG-AbeoNeural",
+        "VoiceId": "(en-NG, AbeoNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-NZ",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-NZ-MollyNeural",
+        "VoiceId": "(en-NZ, MollyNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-NZ-MitchellNeural",
+        "VoiceId": "(en-NZ, MitchellNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-PH",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-PH-RosaNeural",
+        "VoiceId": "(en-PH, RosaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-PH-JamesNeural",
+        "VoiceId": "(en-PH, JamesNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-SG",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-SG-LunaNeural",
+        "VoiceId": "(en-SG, LunaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-SG-WayneNeural",
+        "VoiceId": "(en-SG, WayneNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-TZ",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-TZ-ImaniNeural",
+        "VoiceId": "(en-TZ, ImaniNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-TZ-ElimuNeural",
+        "VoiceId": "(en-TZ, ElimuNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-US",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-JennyMultilingualNeural3",
+        "VoiceId": "(en-US, JennyMultilingualNeural3)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-JennyNeural",
+        "VoiceId": "(en-US, JennyNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-GuyNeural",
+        "VoiceId": "(en-US, GuyNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-AriaNeural",
+        "VoiceId": "(en-US, AriaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-DavisNeural",
+        "VoiceId": "(en-US, DavisNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-AmberNeural",
+        "VoiceId": "(en-US, AmberNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-AnaNeural",
+        "VoiceId": "(en-US, AnaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-AndrewNeural",
+        "VoiceId": "(en-US, AndrewNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-AshleyNeural",
+        "VoiceId": "(en-US, AshleyNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-BrandonNeural",
+        "VoiceId": "(en-US, BrandonNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-BrianNeural",
+        "VoiceId": "(en-US, BrianNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-ChristopherNeural",
+        "VoiceId": "(en-US, ChristopherNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-CoraNeural",
+        "VoiceId": "(en-US, CoraNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-ElizabethNeural",
+        "VoiceId": "(en-US, ElizabethNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-EmmaNeural",
+        "VoiceId": "(en-US, EmmaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-EricNeural",
+        "VoiceId": "(en-US, EricNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-JacobNeural",
+        "VoiceId": "(en-US, JacobNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-JaneNeural",
+        "VoiceId": "(en-US, JaneNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-JasonNeural",
+        "VoiceId": "(en-US, JasonNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-MichelleNeural",
+        "VoiceId": "(en-US, MichelleNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-MonicaNeural",
+        "VoiceId": "(en-US, MonicaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-NancyNeural",
+        "VoiceId": "(en-US, NancyNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-RogerNeural",
+        "VoiceId": "(en-US, RogerNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-SaraNeural",
+        "VoiceId": "(en-US, SaraNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-SteffanNeural",
+        "VoiceId": "(en-US, SteffanNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-TonyNeural",
+        "VoiceId": "(en-US, TonyNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-AIGenerate1Neural1",
+        "VoiceId": "(en-US, AIGenerate1Neural1)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-AIGenerate2Neural1",
+        "VoiceId": "(en-US, AIGenerate2Neural1)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-BlueNeural1",
+        "VoiceId": "(en-US, BlueNeural1)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-US-JennyMultilingualV2Neural1,3",
+        "VoiceId": "(en-US, JennyMultilingualV2Neural1,3)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-US-RyanMultilingualNeural1,3",
+        "VoiceId": "(en-US, RyanMultilingualNeural1,3)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "en-ZA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "en-ZA-LeahNeural",
+        "VoiceId": "(en-ZA, LeahNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "en-ZA-LukeNeural",
+        "VoiceId": "(en-ZA, LukeNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-AR",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-AR-ElenaNeural",
+        "VoiceId": "(es-AR, ElenaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-AR-TomasNeural",
+        "VoiceId": "(es-AR, TomasNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-BO",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-BO-SofiaNeural",
+        "VoiceId": "(es-BO, SofiaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-BO-MarceloNeural",
+        "VoiceId": "(es-BO, MarceloNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-CL",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-CL-CatalinaNeural",
+        "VoiceId": "(es-CL, CatalinaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-CL-LorenzoNeural",
+        "VoiceId": "(es-CL, LorenzoNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-CO",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-CO-SalomeNeural",
+        "VoiceId": "(es-CO, SalomeNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-CO-GonzaloNeural",
+        "VoiceId": "(es-CO, GonzaloNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-CR",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-CR-MariaNeural",
+        "VoiceId": "(es-CR, MariaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-CR-JuanNeural",
+        "VoiceId": "(es-CR, JuanNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-CU",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-CU-BelkysNeural",
+        "VoiceId": "(es-CU, BelkysNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-CU-ManuelNeural",
+        "VoiceId": "(es-CU, ManuelNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-DO",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-DO-RamonaNeural",
+        "VoiceId": "(es-DO, RamonaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-DO-EmilioNeural",
+        "VoiceId": "(es-DO, EmilioNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-EC",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-EC-AndreaNeural",
+        "VoiceId": "(es-EC, AndreaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-EC-LuisNeural",
+        "VoiceId": "(es-EC, LuisNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-ES",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-ES-ElviraNeural",
+        "VoiceId": "(es-ES, ElviraNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-ES-AlvaroNeural",
+        "VoiceId": "(es-ES, AlvaroNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-ES-AbrilNeural",
+        "VoiceId": "(es-ES, AbrilNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-ES-ArnauNeural",
+        "VoiceId": "(es-ES, ArnauNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-ES-DarioNeural",
+        "VoiceId": "(es-ES, DarioNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-ES-EliasNeural",
+        "VoiceId": "(es-ES, EliasNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-ES-EstrellaNeural",
+        "VoiceId": "(es-ES, EstrellaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-ES-IreneNeural",
+        "VoiceId": "(es-ES, IreneNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-ES-LaiaNeural",
+        "VoiceId": "(es-ES, LaiaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-ES-LiaNeural",
+        "VoiceId": "(es-ES, LiaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-ES-NilNeural",
+        "VoiceId": "(es-ES, NilNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-ES-SaulNeural",
+        "VoiceId": "(es-ES, SaulNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-ES-TeoNeural",
+        "VoiceId": "(es-ES, TeoNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-ES-TrianaNeural",
+        "VoiceId": "(es-ES, TrianaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-ES-VeraNeural",
+        "VoiceId": "(es-ES, VeraNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-ES-XimenaNeural",
+        "VoiceId": "(es-ES, XimenaNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-GQ",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-GQ-TeresaNeural",
+        "VoiceId": "(es-GQ, TeresaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-GQ-JavierNeural",
+        "VoiceId": "(es-GQ, JavierNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-GT",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-GT-MartaNeural",
+        "VoiceId": "(es-GT, MartaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-GT-AndresNeural",
+        "VoiceId": "(es-GT, AndresNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-HN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-HN-KarlaNeural",
+        "VoiceId": "(es-HN, KarlaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-HN-CarlosNeural",
+        "VoiceId": "(es-HN, CarlosNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-MX",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-MX-DaliaNeural",
+        "VoiceId": "(es-MX, DaliaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-MX-JorgeNeural",
+        "VoiceId": "(es-MX, JorgeNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-MX-BeatrizNeural",
+        "VoiceId": "(es-MX, BeatrizNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-MX-CandelaNeural",
+        "VoiceId": "(es-MX, CandelaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-MX-CarlotaNeural",
+        "VoiceId": "(es-MX, CarlotaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-MX-CecilioNeural",
+        "VoiceId": "(es-MX, CecilioNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-MX-GerardoNeural",
+        "VoiceId": "(es-MX, GerardoNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-MX-LarissaNeural",
+        "VoiceId": "(es-MX, LarissaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-MX-LibertoNeural",
+        "VoiceId": "(es-MX, LibertoNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-MX-LucianoNeural",
+        "VoiceId": "(es-MX, LucianoNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-MX-MarinaNeural",
+        "VoiceId": "(es-MX, MarinaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-MX-NuriaNeural",
+        "VoiceId": "(es-MX, NuriaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-MX-PelayoNeural",
+        "VoiceId": "(es-MX, PelayoNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-MX-RenataNeural",
+        "VoiceId": "(es-MX, RenataNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-MX-YagoNeural",
+        "VoiceId": "(es-MX, YagoNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-NI",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-NI-YolandaNeural",
+        "VoiceId": "(es-NI, YolandaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-NI-FedericoNeural",
+        "VoiceId": "(es-NI, FedericoNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-PA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-PA-MargaritaNeural",
+        "VoiceId": "(es-PA, MargaritaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-PA-RobertoNeural",
+        "VoiceId": "(es-PA, RobertoNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-PE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-PE-CamilaNeural",
+        "VoiceId": "(es-PE, CamilaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-PE-AlexNeural",
+        "VoiceId": "(es-PE, AlexNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-PR",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-PR-KarinaNeural",
+        "VoiceId": "(es-PR, KarinaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-PR-VictorNeural",
+        "VoiceId": "(es-PR, VictorNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-PY",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-PY-TaniaNeural",
+        "VoiceId": "(es-PY, TaniaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-PY-MarioNeural",
+        "VoiceId": "(es-PY, MarioNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-SV",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-SV-LorenaNeural",
+        "VoiceId": "(es-SV, LorenaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-SV-RodrigoNeural",
+        "VoiceId": "(es-SV, RodrigoNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-US",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-US-PalomaNeural",
+        "VoiceId": "(es-US, PalomaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-US-AlonsoNeural",
+        "VoiceId": "(es-US, AlonsoNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-UY",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-UY-ValentinaNeural",
+        "VoiceId": "(es-UY, ValentinaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-UY-MateoNeural",
+        "VoiceId": "(es-UY, MateoNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "es-VE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "es-VE-PaolaNeural",
+        "VoiceId": "(es-VE, PaolaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "es-VE-SebastianNeural",
+        "VoiceId": "(es-VE, SebastianNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "et-EE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "et-EE-AnuNeural2",
+        "VoiceId": "(et-EE, AnuNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "et-EE-KertNeural2",
+        "VoiceId": "(et-EE, KertNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "eu-ES",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "eu-ES-AinhoaNeural2",
+        "VoiceId": "(eu-ES, AinhoaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "eu-ES-AnderNeural2",
+        "VoiceId": "(eu-ES, AnderNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "fa-IR",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "fa-IR-DilaraNeural2",
+        "VoiceId": "(fa-IR, DilaraNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fa-IR-FaridNeural2",
+        "VoiceId": "(fa-IR, FaridNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "fi-FI",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "fi-FI-SelmaNeural",
+        "VoiceId": "(fi-FI, SelmaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fi-FI-HarriNeural",
+        "VoiceId": "(fi-FI, HarriNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "fi-FI-NooraNeural",
+        "VoiceId": "(fi-FI, NooraNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "fil-PH",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "fil-PH-BlessicaNeural2",
+        "VoiceId": "(fil-PH, BlessicaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fil-PH-AngeloNeural2",
+        "VoiceId": "(fil-PH, AngeloNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "fr-BE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-BE-CharlineNeural",
+        "VoiceId": "(fr-BE, CharlineNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-BE-GerardNeural",
+        "VoiceId": "(fr-BE, GerardNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "fr-CA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-CA-SylvieNeural",
+        "VoiceId": "(fr-CA, SylvieNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-CA-JeanNeural",
+        "VoiceId": "(fr-CA, JeanNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-CA-AntoineNeural",
+        "VoiceId": "(fr-CA, AntoineNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-CA-ThierryNeural",
+        "VoiceId": "(fr-CA, ThierryNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "fr-CH",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-CH-ArianeNeural",
+        "VoiceId": "(fr-CH, ArianeNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-CH-FabriceNeural",
+        "VoiceId": "(fr-CH, FabriceNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "fr-FR",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-FR-DeniseNeural",
+        "VoiceId": "(fr-FR, DeniseNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-FR-HenriNeural",
+        "VoiceId": "(fr-FR, HenriNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-FR-AlainNeural",
+        "VoiceId": "(fr-FR, AlainNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-FR-BrigitteNeural",
+        "VoiceId": "(fr-FR, BrigitteNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-FR-CelesteNeural",
+        "VoiceId": "(fr-FR, CelesteNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-FR-ClaudeNeural",
+        "VoiceId": "(fr-FR, ClaudeNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-FR-CoralieNeural",
+        "VoiceId": "(fr-FR, CoralieNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-FR-EloiseNeural",
+        "VoiceId": "(fr-FR, EloiseNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-FR-JacquelineNeural",
+        "VoiceId": "(fr-FR, JacquelineNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-FR-JeromeNeural",
+        "VoiceId": "(fr-FR, JeromeNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-FR-JosephineNeural",
+        "VoiceId": "(fr-FR, JosephineNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-FR-MauriceNeural",
+        "VoiceId": "(fr-FR, MauriceNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-FR-VivienneNeural",
+        "VoiceId": "(fr-FR, VivienneNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "fr-FR-YvesNeural",
+        "VoiceId": "(fr-FR, YvesNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "fr-FR-YvetteNeural",
+        "VoiceId": "(fr-FR, YvetteNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ga-IE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ga-IE-OrlaNeural2",
+        "VoiceId": "(ga-IE, OrlaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ga-IE-ColmNeural2",
+        "VoiceId": "(ga-IE, ColmNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "gl-ES",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "gl-ES-SabelaNeural2",
+        "VoiceId": "(gl-ES, SabelaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "gl-ES-RoiNeural2",
+        "VoiceId": "(gl-ES, RoiNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "gu-IN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "gu-IN-DhwaniNeural",
+        "VoiceId": "(gu-IN, DhwaniNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "gu-IN-NiranjanNeural",
+        "VoiceId": "(gu-IN, NiranjanNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "he-IL",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "he-IL-HilaNeural",
+        "VoiceId": "(he-IL, HilaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "he-IL-AvriNeural",
+        "VoiceId": "(he-IL, AvriNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "hi-IN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "hi-IN-SwaraNeural",
+        "VoiceId": "(hi-IN, SwaraNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "hi-IN-MadhurNeural",
+        "VoiceId": "(hi-IN, MadhurNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "hr-HR",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "hr-HR-GabrijelaNeural",
+        "VoiceId": "(hr-HR, GabrijelaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "hr-HR-SreckoNeural",
+        "VoiceId": "(hr-HR, SreckoNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "hu-HU",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "hu-HU-NoemiNeural",
+        "VoiceId": "(hu-HU, NoemiNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "hu-HU-TamasNeural",
+        "VoiceId": "(hu-HU, TamasNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "hy-AM",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "hy-AM-AnahitNeural2",
+        "VoiceId": "(hy-AM, AnahitNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "hy-AM-HaykNeural2",
+        "VoiceId": "(hy-AM, HaykNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "id-ID",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "id-ID-GadisNeural",
+        "VoiceId": "(id-ID, GadisNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "id-ID-ArdiNeural",
+        "VoiceId": "(id-ID, ArdiNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "is-IS",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "is-IS-GudrunNeural2",
+        "VoiceId": "(is-IS, GudrunNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "is-IS-GunnarNeural2",
+        "VoiceId": "(is-IS, GunnarNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "it-IT",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "it-IT-ElsaNeural",
+        "VoiceId": "(it-IT, ElsaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "it-IT-IsabellaNeural",
+        "VoiceId": "(it-IT, IsabellaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "it-IT-DiegoNeural",
+        "VoiceId": "(it-IT, DiegoNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "it-IT-BenignoNeural",
+        "VoiceId": "(it-IT, BenignoNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "it-IT-CalimeroNeural",
+        "VoiceId": "(it-IT, CalimeroNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "it-IT-CataldoNeural",
+        "VoiceId": "(it-IT, CataldoNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "it-IT-FabiolaNeural",
+        "VoiceId": "(it-IT, FabiolaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "it-IT-FiammaNeural",
+        "VoiceId": "(it-IT, FiammaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "it-IT-GianniNeural",
+        "VoiceId": "(it-IT, GianniNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "it-IT-GiuseppeNeural",
+        "VoiceId": "(it-IT, GiuseppeNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "it-IT-ImeldaNeural",
+        "VoiceId": "(it-IT, ImeldaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "it-IT-IrmaNeural",
+        "VoiceId": "(it-IT, IrmaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "it-IT-LisandroNeural",
+        "VoiceId": "(it-IT, LisandroNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "it-IT-PalmiraNeural",
+        "VoiceId": "(it-IT, PalmiraNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "it-IT-PierinaNeural",
+        "VoiceId": "(it-IT, PierinaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "it-IT-RinaldoNeural",
+        "VoiceId": "(it-IT, RinaldoNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ja-JP",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ja-JP-NanamiNeural",
+        "VoiceId": "(ja-JP, NanamiNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ja-JP-KeitaNeural",
+        "VoiceId": "(ja-JP, KeitaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "ja-JP-AoiNeural",
+        "VoiceId": "(ja-JP, AoiNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ja-JP-DaichiNeural",
+        "VoiceId": "(ja-JP, DaichiNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "ja-JP-MayuNeural",
+        "VoiceId": "(ja-JP, MayuNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ja-JP-NaokiNeural",
+        "VoiceId": "(ja-JP, NaokiNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "ja-JP-ShioriNeural",
+        "VoiceId": "(ja-JP, ShioriNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "jv-ID",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "jv-ID-SitiNeural2",
+        "VoiceId": "(jv-ID, SitiNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "jv-ID-DimasNeural2",
+        "VoiceId": "(jv-ID, DimasNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ka-GE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ka-GE-EkaNeural2",
+        "VoiceId": "(ka-GE, EkaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ka-GE-GiorgiNeural2",
+        "VoiceId": "(ka-GE, GiorgiNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "kk-KZ",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "kk-KZ-AigulNeural2",
+        "VoiceId": "(kk-KZ, AigulNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "kk-KZ-DauletNeural2",
+        "VoiceId": "(kk-KZ, DauletNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "km-KH",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "km-KH-SreymomNeural2",
+        "VoiceId": "(km-KH, SreymomNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "km-KH-PisethNeural2",
+        "VoiceId": "(km-KH, PisethNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "kn-IN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "kn-IN-SapnaNeural2",
+        "VoiceId": "(kn-IN, SapnaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "kn-IN-GaganNeural2",
+        "VoiceId": "(kn-IN, GaganNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ko-KR",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ko-KR-SunHiNeural",
+        "VoiceId": "(ko-KR, SunHiNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ko-KR-InJoonNeural",
+        "VoiceId": "(ko-KR, InJoonNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ko-KR-BongJinNeural",
+        "VoiceId": "(ko-KR, BongJinNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ko-KR-GookMinNeural",
+        "VoiceId": "(ko-KR, GookMinNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ko-KR-HyunsuNeural",
+        "VoiceId": "(ko-KR, HyunsuNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "ko-KR-JiMinNeural",
+        "VoiceId": "(ko-KR, JiMinNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "ko-KR-SeoHyeonNeural",
+        "VoiceId": "(ko-KR, SeoHyeonNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "ko-KR-SoonBokNeural",
+        "VoiceId": "(ko-KR, SoonBokNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "ko-KR-YuJinNeural",
+        "VoiceId": "(ko-KR, YuJinNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "lo-LA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "lo-LA-KeomanyNeural2",
+        "VoiceId": "(lo-LA, KeomanyNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "lo-LA-ChanthavongNeural2",
+        "VoiceId": "(lo-LA, ChanthavongNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "lt-LT",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "lt-LT-OnaNeural2",
+        "VoiceId": "(lt-LT, OnaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "lt-LT-LeonasNeural2",
+        "VoiceId": "(lt-LT, LeonasNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "lv-LV",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "lv-LV-EveritaNeural2",
+        "VoiceId": "(lv-LV, EveritaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "lv-LV-NilsNeural2",
+        "VoiceId": "(lv-LV, NilsNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "mk-MK",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "mk-MK-MarijaNeural2",
+        "VoiceId": "(mk-MK, MarijaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "mk-MK-AleksandarNeural2",
+        "VoiceId": "(mk-MK, AleksandarNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ml-IN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ml-IN-SobhanaNeural2",
+        "VoiceId": "(ml-IN, SobhanaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ml-IN-MidhunNeural2",
+        "VoiceId": "(ml-IN, MidhunNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "mn-MN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "mn-MN-YesuiNeural2",
+        "VoiceId": "(mn-MN, YesuiNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "mn-MN-BataaNeural2",
+        "VoiceId": "(mn-MN, BataaNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "mr-IN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "mr-IN-AarohiNeural",
+        "VoiceId": "(mr-IN, AarohiNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "mr-IN-ManoharNeural",
+        "VoiceId": "(mr-IN, ManoharNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ms-MY",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ms-MY-YasminNeural",
+        "VoiceId": "(ms-MY, YasminNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ms-MY-OsmanNeural",
+        "VoiceId": "(ms-MY, OsmanNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "mt-MT",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "mt-MT-GraceNeural2",
+        "VoiceId": "(mt-MT, GraceNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "mt-MT-JosephNeural2",
+        "VoiceId": "(mt-MT, JosephNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "my-MM",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "my-MM-NilarNeural2",
+        "VoiceId": "(my-MM, NilarNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "my-MM-ThihaNeural2",
+        "VoiceId": "(my-MM, ThihaNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "nb-NO",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "nb-NO-PernilleNeural",
+        "VoiceId": "(nb-NO, PernilleNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "nb-NO-FinnNeural",
+        "VoiceId": "(nb-NO, FinnNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "nb-NO-IselinNeural",
+        "VoiceId": "(nb-NO, IselinNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ne-NP",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ne-NP-HemkalaNeural2",
+        "VoiceId": "(ne-NP, HemkalaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ne-NP-SagarNeural2",
+        "VoiceId": "(ne-NP, SagarNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "nl-BE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "nl-BE-DenaNeural",
+        "VoiceId": "(nl-BE, DenaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "nl-BE-ArnaudNeural",
+        "VoiceId": "(nl-BE, ArnaudNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "nl-NL",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "nl-NL-FennaNeural",
+        "VoiceId": "(nl-NL, FennaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "nl-NL-MaartenNeural",
+        "VoiceId": "(nl-NL, MaartenNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "nl-NL-ColetteNeural",
+        "VoiceId": "(nl-NL, ColetteNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "pl-PL",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "pl-PL-AgnieszkaNeural",
+        "VoiceId": "(pl-PL, AgnieszkaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "pl-PL-MarekNeural",
+        "VoiceId": "(pl-PL, MarekNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "pl-PL-ZofiaNeural",
+        "VoiceId": "(pl-PL, ZofiaNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ps-AF",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ps-AF-LatifaNeural2",
+        "VoiceId": "(ps-AF, LatifaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ps-AF-GulNawazNeural2",
+        "VoiceId": "(ps-AF, GulNawazNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "pt-BR",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-BR-FranciscaNeural",
+        "VoiceId": "(pt-BR, FranciscaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "pt-BR-AntonioNeural",
+        "VoiceId": "(pt-BR, AntonioNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-BR-BrendaNeural",
+        "VoiceId": "(pt-BR, BrendaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "pt-BR-DonatoNeural",
+        "VoiceId": "(pt-BR, DonatoNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-BR-ElzaNeural",
+        "VoiceId": "(pt-BR, ElzaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "pt-BR-FabioNeural",
+        "VoiceId": "(pt-BR, FabioNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-BR-GiovannaNeural",
+        "VoiceId": "(pt-BR, GiovannaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "pt-BR-HumbertoNeural",
+        "VoiceId": "(pt-BR, HumbertoNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "pt-BR-JulioNeural",
+        "VoiceId": "(pt-BR, JulioNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-BR-LeilaNeural",
+        "VoiceId": "(pt-BR, LeilaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-BR-LeticiaNeural",
+        "VoiceId": "(pt-BR, LeticiaNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-BR-ManuelaNeural",
+        "VoiceId": "(pt-BR, ManuelaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "pt-BR-NicolauNeural",
+        "VoiceId": "(pt-BR, NicolauNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-BR-ThalitaNeural",
+        "VoiceId": "(pt-BR, ThalitaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "pt-BR-ValerioNeural",
+        "VoiceId": "(pt-BR, ValerioNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-BR-YaraNeural",
+        "VoiceId": "(pt-BR, YaraNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "pt-PT",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-PT-RaquelNeural",
+        "VoiceId": "(pt-PT, RaquelNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "pt-PT-DuarteNeural",
+        "VoiceId": "(pt-PT, DuarteNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "pt-PT-FernandaNeural",
+        "VoiceId": "(pt-PT, FernandaNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ro-RO",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ro-RO-AlinaNeural",
+        "VoiceId": "(ro-RO, AlinaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ro-RO-EmilNeural",
+        "VoiceId": "(ro-RO, EmilNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ru-RU",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ru-RU-SvetlanaNeural",
+        "VoiceId": "(ru-RU, SvetlanaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ru-RU-DmitryNeural",
+        "VoiceId": "(ru-RU, DmitryNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "ru-RU-DariyaNeural",
+        "VoiceId": "(ru-RU, DariyaNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "si-LK",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "si-LK-ThiliniNeural2",
+        "VoiceId": "(si-LK, ThiliniNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "si-LK-SameeraNeural2",
+        "VoiceId": "(si-LK, SameeraNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "sk-SK",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "sk-SK-ViktoriaNeural",
+        "VoiceId": "(sk-SK, ViktoriaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "sk-SK-LukasNeural",
+        "VoiceId": "(sk-SK, LukasNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "sl-SI",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "sl-SI-PetraNeural",
+        "VoiceId": "(sl-SI, PetraNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "sl-SI-RokNeural",
+        "VoiceId": "(sl-SI, RokNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "so-SO",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "so-SO-UbaxNeural2",
+        "VoiceId": "(so-SO, UbaxNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "so-SO-MuuseNeural2",
+        "VoiceId": "(so-SO, MuuseNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "sq-AL",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "sq-AL-AnilaNeural2",
+        "VoiceId": "(sq-AL, AnilaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "sq-AL-IlirNeural2",
+        "VoiceId": "(sq-AL, IlirNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "sr-LATN-RS",
+    "VoiceActors": [
+      {
+        "IsFemale": false,
+        "VoiceActor": "sr-Latn-RS-NicholasNeural1,2",
+        "VoiceId": "(sr-Latn, RS)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "sr-Latn-RS-SophieNeural1,2",
+        "VoiceId": "(sr-Latn, RS)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "sr-RS",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "sr-RS-SophieNeural2",
+        "VoiceId": "(sr-RS, SophieNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "sr-RS-NicholasNeural2",
+        "VoiceId": "(sr-RS, NicholasNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "su-ID",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "su-ID-TutiNeural2",
+        "VoiceId": "(su-ID, TutiNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "su-ID-JajangNeural2",
+        "VoiceId": "(su-ID, JajangNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "sv-SE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "sv-SE-SofieNeural",
+        "VoiceId": "(sv-SE, SofieNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "sv-SE-MattiasNeural",
+        "VoiceId": "(sv-SE, MattiasNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "sv-SE-HilleviNeural",
+        "VoiceId": "(sv-SE, HilleviNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "sw-KE",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "sw-KE-ZuriNeural2",
+        "VoiceId": "(sw-KE, ZuriNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "sw-KE-RafikiNeural2",
+        "VoiceId": "(sw-KE, RafikiNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "sw-TZ",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "sw-TZ-RehemaNeural",
+        "VoiceId": "(sw-TZ, RehemaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "sw-TZ-DaudiNeural",
+        "VoiceId": "(sw-TZ, DaudiNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ta-IN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ta-IN-PallaviNeural",
+        "VoiceId": "(ta-IN, PallaviNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ta-IN-ValluvarNeural",
+        "VoiceId": "(ta-IN, ValluvarNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ta-LK",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ta-LK-SaranyaNeural",
+        "VoiceId": "(ta-LK, SaranyaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ta-LK-KumarNeural",
+        "VoiceId": "(ta-LK, KumarNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ta-MY",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ta-MY-KaniNeural",
+        "VoiceId": "(ta-MY, KaniNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ta-MY-SuryaNeural",
+        "VoiceId": "(ta-MY, SuryaNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ta-SG",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ta-SG-VenbaNeural",
+        "VoiceId": "(ta-SG, VenbaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ta-SG-AnbuNeural",
+        "VoiceId": "(ta-SG, AnbuNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "te-IN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "te-IN-ShrutiNeural",
+        "VoiceId": "(te-IN, ShrutiNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "te-IN-MohanNeural",
+        "VoiceId": "(te-IN, MohanNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "th-TH",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "th-TH-PremwadeeNeural",
+        "VoiceId": "(th-TH, PremwadeeNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "th-TH-NiwatNeural",
+        "VoiceId": "(th-TH, NiwatNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "th-TH-AcharaNeural",
+        "VoiceId": "(th-TH, AcharaNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "tr-TR",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "tr-TR-EmelNeural",
+        "VoiceId": "(tr-TR, EmelNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "tr-TR-AhmetNeural",
+        "VoiceId": "(tr-TR, AhmetNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "uk-UA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "uk-UA-PolinaNeural",
+        "VoiceId": "(uk-UA, PolinaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "uk-UA-OstapNeural",
+        "VoiceId": "(uk-UA, OstapNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ur-IN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ur-IN-GulNeural",
+        "VoiceId": "(ur-IN, GulNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ur-IN-SalmanNeural",
+        "VoiceId": "(ur-IN, SalmanNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "ur-PK",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "ur-PK-UzmaNeural",
+        "VoiceId": "(ur-PK, UzmaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "ur-PK-AsadNeural",
+        "VoiceId": "(ur-PK, AsadNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "uz-UZ",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "uz-UZ-MadinaNeural2",
+        "VoiceId": "(uz-UZ, MadinaNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "uz-UZ-SardorNeural2",
+        "VoiceId": "(uz-UZ, SardorNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "vi-VN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "vi-VN-HoaiMyNeural",
+        "VoiceId": "(vi-VN, HoaiMyNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "vi-VN-NamMinhNeural",
+        "VoiceId": "(vi-VN, NamMinhNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "wuu-CN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "wuu-CN-XiaotongNeural2",
+        "VoiceId": "(wuu-CN, XiaotongNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "wuu-CN-YunzheNeural2",
+        "VoiceId": "(wuu-CN, YunzheNeural2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "yue-CN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "yue-CN-XiaoMinNeural1,2",
+        "VoiceId": "(yue-CN, XiaoMinNeural1,2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "yue-CN-YunSongNeural1,2",
+        "VoiceId": "(yue-CN, YunSongNeural1,2)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "zh-CN",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaoxiaoNeural",
+        "VoiceId": "(zh-CN, XiaoxiaoNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-YunxiNeural",
+        "VoiceId": "(zh-CN, YunxiNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-YunjianNeural",
+        "VoiceId": "(zh-CN, YunjianNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaoyiNeural",
+        "VoiceId": "(zh-CN, XiaoyiNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-YunyangNeural",
+        "VoiceId": "(zh-CN, YunyangNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaochenNeural",
+        "VoiceId": "(zh-CN, XiaochenNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaohanNeural",
+        "VoiceId": "(zh-CN, XiaohanNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaomengNeural",
+        "VoiceId": "(zh-CN, XiaomengNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaomoNeural",
+        "VoiceId": "(zh-CN, XiaomoNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaoqiuNeural",
+        "VoiceId": "(zh-CN, XiaoqiuNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaoruiNeural",
+        "VoiceId": "(zh-CN, XiaoruiNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaoshuangNeural",
+        "VoiceId": "(zh-CN, XiaoshuangNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaoxuanNeural",
+        "VoiceId": "(zh-CN, XiaoxuanNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaoyanNeural",
+        "VoiceId": "(zh-CN, XiaoyanNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaoyouNeural",
+        "VoiceId": "(zh-CN, XiaoyouNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaozhenNeural",
+        "VoiceId": "(zh-CN, XiaozhenNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-YunfengNeural",
+        "VoiceId": "(zh-CN, YunfengNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-YunhaoNeural",
+        "VoiceId": "(zh-CN, YunhaoNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-YunxiaNeural",
+        "VoiceId": "(zh-CN, YunxiaNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-YunyeNeural",
+        "VoiceId": "(zh-CN, YunyeNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-YunzeNeural",
+        "VoiceId": "(zh-CN, YunzeNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-XiaorouNeural1",
+        "VoiceId": "(zh-CN, XiaorouNeural1)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-YunjieNeural1",
+        "VoiceId": "(zh-CN, YunjieNeural1)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "zh-CN-GUANGXI",
+    "VoiceActors": [
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-guangxi-YunqiNeural1,2",
+        "VoiceId": "(zh-CN, guangxi)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "zh-CN-henan",
+    "VoiceActors": [
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-henan-YundengNeural2",
+        "VoiceId": "(zh-CN, henan)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "zh-CN-liaoning",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-liaoning-XiaobeiNeural1,2",
+        "VoiceId": "(zh-CN, liaoning)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-liaoning-YunbiaoNeural1,2",
+        "VoiceId": "(zh-CN, liaoning)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "zh-CN-shaanxi",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-CN-shaanxi-XiaoniNeural1,2",
+        "VoiceId": "(zh-CN, shaanxi)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "zh-CN-shandong",
+    "VoiceActors": [
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-shandong-YunxiangNeural2",
+        "VoiceId": "(zh-CN, shandong)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "zh-CN-sichuan",
+    "VoiceActors": [
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-CN-sichuan-YunxiNeural1,2",
+        "VoiceId": "(zh-CN, sichuan)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "zh-HK",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-HK-HiuMaanNeural",
+        "VoiceId": "(zh-HK, HiuMaanNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-HK-WanLungNeural",
+        "VoiceId": "(zh-HK, WanLungNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-HK-HiuGaaiNeural",
+        "VoiceId": "(zh-HK, HiuGaaiNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "zh-TW",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-TW-HsiaoChenNeural",
+        "VoiceId": "(zh-TW, HsiaoChenNeural)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zh-TW-YunJheNeural",
+        "VoiceId": "(zh-TW, YunJheNeural)"
+      },
+      {
+        "IsFemale": true,
+        "VoiceActor": "zh-TW-HsiaoYuNeural",
+        "VoiceId": "(zh-TW, HsiaoYuNeural)"
+      }
+    ]
+  },
+  {
+    "LanguageKey": "zu-ZA",
+    "VoiceActors": [
+      {
+        "IsFemale": true,
+        "VoiceActor": "zu-ZA-ThandoNeural2",
+        "VoiceId": "(zu-ZA, ThandoNeural2)"
+      },
+      {
+        "IsFemale": false,
+        "VoiceActor": "zu-ZA-ThembaNeural2",
+        "VoiceId": "(zu-ZA, ThembaNeural2)"
+      }
+    ]
+  }
+]

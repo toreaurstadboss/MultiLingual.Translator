@@ -9,6 +9,8 @@
 @using MultiLingual.Translator.Lib.Models;
 @using MultiLingual.Translator.Models;
 @using Plugin.Maui.Audio;
+@using System.Text.Json;
+@using System.Text;
 
 <h1>Azure AI Text Translation</h1>
 
@@ -114,9 +116,28 @@
         }
     }
 
+    private async Task<TextToSpeechLanguage[]> GetActorVoices()
+    {
+        //https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts
+        Stream actorVoicesStream = await FileSystem.OpenAppPackageFileAsync("voicebook.json");
+        using StreamReader sr = new StreamReader(actorVoicesStream);
+        string actorVoicesJson = string.Empty;
+        string line;
+
+        while ((line = sr.ReadLine()) != null)
+        {
+            Console.WriteLine(line);
+            actorVoicesJson += line;
+        }
+
+        var actorVoices = JsonSerializer.Deserialize<TextToSpeechLanguage[]>(actorVoicesJson);
+        return actorVoices;
+    }
+
     private async void SpeakText()
     {
-        byte[] voiceSpeechBytes = await TextToSpeechUtil.GetSpeechFromText(Model.TranslatedText, Model.TargetLanguage);
+        var actorVoices = await GetActorVoices();
+        byte[] voiceSpeechBytes = await TextToSpeechUtil.GetSpeechFromText(Model.TranslatedText, Model.TargetLanguage, actorVoices);
 
         var voiceFolder = Path.Combine(FileSystem.Current.AppDataDirectory, "Resources", "Raw");
         if (!Directory.Exists(voiceFolder))

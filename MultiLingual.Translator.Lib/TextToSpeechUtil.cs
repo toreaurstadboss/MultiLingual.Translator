@@ -1,7 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
-using System.IO;
-using System;
-using System.Runtime.InteropServices;
+using MultiLingual.Translator.Lib.Models;
 using System.Security;
 using System.Text;
 
@@ -15,9 +13,9 @@ namespace MultiLingual.Translator.Lib
             _configuration = configuration;
         }
 
-        public async Task<byte[]> GetSpeechFromText(string text, string language)
+        public async Task<byte[]> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices)
         {
-            string xml = GetSpeechTextXml(text, language);
+            string xml = GetSpeechTextXml(text, language, actorVoices);
             string? token = await GetUpdatedToken();
 
             HttpClient httpClient = GetTextToSpeechWebClient(token);
@@ -51,16 +49,34 @@ namespace MultiLingual.Translator.Lib
             httpClient.DefaultRequestHeaders.Add("User-Agent", _configuration[TextToSpeechSpeechUserAgent]);
             return httpClient;
         }
-
-        private string GetSpeechTextXml(string text, string language)
+       
+        private string GetSpeechTextXml(string text, string language, TextToSpeechLanguage[] actorVoices)
         {
+            string voiceActorId = ResolveVoiceActorId(language, actorVoices);
             string speechXml = $@"
             <speak version='1.0' xml:lang='en-US'>
-                <voice xml:lang='en-US' xml:gender='Male' name='Microsoft Server Speech Text to Speech Voice (nb-NO, FinnNeural)'>
+                <voice xml:lang='en-US' xml:gender='Male' name='Microsoft Server Speech Text to Speech Voice {voiceActorId}'>
                     <prosody rate='1'>{text}</prosody>
                 </voice>
             </speak>";
             return speechXml;               
+        }
+
+        private string ResolveVoiceActorId(string language, TextToSpeechLanguage[] actorVoices)
+        {
+            string actorVoiceId = "(nb-NO, FinnNeural)"; //default to a voice actor id 
+            if (actorVoices?.Any() == true)
+            {
+                var matchingLanguageFirstActorVoice = actorVoices.FirstOrDefault(v => v.LanguageKey == language || v.LanguageKey.Split("-")[0] == language);
+                if (matchingLanguageFirstActorVoice != null)
+                {
+                    if (matchingLanguageFirstActorVoice.VoiceActors.Any() == true)
+                    {
+                        actorVoiceId = matchingLanguageFirstActorVoice.VoiceActors.First().VoiceId;
+                    }
+                }
+            }
+            return actorVoiceId;
         }
 
         private async Task<string> GetIssuedToken()
