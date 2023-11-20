@@ -51,6 +51,7 @@
 
     <ItemGroup>
       <Content Remove="Resources\Raw\voicebook.json" />
+      <Content Remove="wwwroot\images\flags\png100px\nb.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -237,6 +238,7 @@
 	  <None Include="wwwroot\images\flags\png100px\ng.png" />
 	  <None Include="wwwroot\images\flags\png100px\ni.png" />
 	  <None Include="wwwroot\images\flags\png100px\nl.png" />
+	  <None Include="wwwroot\images\flags\png100px\nb.png" />
 	  <None Include="wwwroot\images\flags\png100px\no.png" />
 	  <None Include="wwwroot\images\flags\png100px\np.png" />
 	  <None Include="wwwroot\images\flags\png100px\nr.png" />
