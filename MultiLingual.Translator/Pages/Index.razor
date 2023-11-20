@@ -55,6 +55,18 @@
                     <span>Voice Actor Id: @Model.ActiveVoiceActorId</span>
                     <span class="small">Audio content: @Model.AdditionalVoiceDataMetaInformation</span>
                 }
+
+                @if (Model.AvailableVoiceActorIds?.Any() == true)
+                {
+                    <span>Select voice actor in language:</span>
+                    <InputSelect placeholder="Choose the target language" @bind-Value="Model!.PreferredVoiceActorId">
+                        @foreach (var actor in Model.AvailableVoiceActorIds)
+                        {
+                            <option value="@actor">@actor</option>
+                        }
+                    </InputSelect>
+                }
+               
             }
           }
   
@@ -147,7 +159,7 @@
 
         while ((line = sr.ReadLine()) != null)
         {
-            Console.WriteLine(line);
+            //Console.WriteLine(line);
             actorVoicesJson += line;
         }
 
@@ -159,12 +171,11 @@
     {
         await Submit();
         var actorVoices = await GetActorVoices();
-        TextToSpeechResult textToSpeechResult = await TextToSpeechUtil.GetSpeechFromText(Model.TranslatedText, Model.TargetLanguage, actorVoices);
+        TextToSpeechResult textToSpeechResult = await TextToSpeechUtil.GetSpeechFromText(Model.TranslatedText, Model.TargetLanguage, actorVoices, Model.PreferredVoiceActorId);
 
         Model.ActiveVoiceActorId = textToSpeechResult.VoiceActorId;
-
         Model.Transcript = textToSpeechResult.Transcript;
-
+        Model.AvailableVoiceActorIds = textToSpeechResult.AvailableVoiceActorIds;
         Model.AdditionalVoiceDataMetaInformation = $"Byte size voice data: {textToSpeechResult?.VoiceData?.Length}, Audio output format: {textToSpeechResult.OutputFormat}";
 
         var voiceFolder = Path.Combine(FileSystem.Current.AppDataDirectory, "Resources", "Raw");
@@ -178,6 +189,8 @@
         string voiceFileFullPath = Path.Combine(voiceFolder, voiceFile);
         await File.WriteAllBytesAsync(voiceFileFullPath, textToSpeechResult.VoiceData);
         Stream voiceStream = File.OpenRead(voiceFileFullPath);
+
+        StateHasChanged();
 
         var player = AudioManager.CreatePlayer(voiceStream);
         player.Play();

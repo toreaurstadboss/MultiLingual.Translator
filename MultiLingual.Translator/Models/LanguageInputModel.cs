@@ -14,6 +14,10 @@
 
         public string ActiveVoiceActorId { get; set; }
 
+        public string? PreferredVoiceActorId { get; set; }
+
+        public List<string> AvailableVoiceActorIds { get; set; } = new();
+
         public string AdditionalVoiceDataMetaInformation { get; set; }
 
         /// <summary>

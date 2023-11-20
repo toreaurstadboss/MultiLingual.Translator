@@ -13,11 +13,11 @@ namespace MultiLingual.Translator.Lib
             _configuration = configuration;
         }
 
-        public async Task<TextToSpeechResult> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices)
+        public async Task<TextToSpeechResult> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices, string? preferredVoiceActorId)
         {
             var result = new TextToSpeechResult();
 
-            result.Transcript = GetSpeechTextXml(text, language, actorVoices, result);
+            result.Transcript = GetSpeechTextXml(text, language, actorVoices, preferredVoiceActorId, result);
             result.ContentType = _configuration[TextToSpeechSpeechContentType];
             result.OutputFormat = _configuration[TextToSpeechSpeechXMicrosoftOutputFormat];
             result.UserAgent = _configuration[TextToSpeechSpeechUserAgent];
@@ -60,9 +60,9 @@ namespace MultiLingual.Translator.Lib
             return httpClient;
         }
        
-        private string GetSpeechTextXml(string text, string language, TextToSpeechLanguage[] actorVoices, TextToSpeechResult result)
+        private string GetSpeechTextXml(string text, string language, TextToSpeechLanguage[] actorVoices, string? preferredVoiceActorId, TextToSpeechResult result)
         {
-            result.VoiceActorId = ResolveVoiceActorId(language, actorVoices);
+            result.VoiceActorId = ResolveVoiceActorId(language, preferredVoiceActorId, actorVoices);
             string speechXml = $@"
             <speak version='1.0' xml:lang='en-US'>
                 <voice xml:lang='en-US' xml:gender='Male' name='Microsoft Server Speech Text to Speech Voice {result.VoiceActorId}'>
@@ -82,17 +82,22 @@ namespace MultiLingual.Translator.Lib
             return new List<string>();
         }
 
-        private string ResolveVoiceActorId(string language, TextToSpeechLanguage[] actorVoices)
+        private string ResolveVoiceActorId(string language, string? preferredVoiceActorId, TextToSpeechLanguage[] actorVoices)
         {
-            string actorVoiceId = "(nb-NO, FinnNeural)"; //default to a voice actor id 
+            string actorVoiceId = "(en-AU, NatashaNeural)"; //default to a select voice actor id 
             if (actorVoices?.Any() == true)
             {
-                var matchingLanguageFirstActorVoice = actorVoices.FirstOrDefault(v => v.LanguageKey == language || v.LanguageKey.Split("-")[0] == language);
-                if (matchingLanguageFirstActorVoice != null)
+                var voiceActorsForLanguage = actorVoices.Where(v => v.LanguageKey == language || v.LanguageKey.Split("-")[0] == language).SelectMany(v => v.VoiceActors).Select(v => v.VoiceId).ToList();
+                if (voiceActorsForLanguage != null)
                 {
-                    if (matchingLanguageFirstActorVoice.VoiceActors.Any() == true)
+                    if (voiceActorsForLanguage.Any() == true)
                     {
-                        actorVoiceId = matchingLanguageFirstActorVoice.VoiceActors.First().VoiceId;
+                        var resolvedPreferredVoiceActorId = voiceActorsForLanguage.FirstOrDefault(v => v == preferredVoiceActorId);
+                        if (!string.IsNullOrWhiteSpace(resolvedPreferredVoiceActorId))
+                        {
+                            return resolvedPreferredVoiceActorId!;
+                        }
+                        actorVoiceId = voiceActorsForLanguage.First();
                     }
                 }
             }
