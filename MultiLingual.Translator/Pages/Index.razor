@@ -12,7 +12,7 @@
 @using System.Text.Json;
 @using System.Text;
 
-<h1>Azure AI Text Translation</h1>
+<h4>Azure AI Text Translation with Text-To-Speech</h4>
 
 <EditForm Model="@Model" OnValidSubmit="@Submit" class="form-group" style="background-color:aliceblue;">
     <DataAnnotationsValidator />
@@ -53,16 +53,31 @@
                 @if (!string.IsNullOrWhiteSpace(Model.ActiveVoiceActorId))
                 {
                     <span>Voice Actor Id: @Model.ActiveVoiceActorId</span>
+                    <span class="small">Audio content: @Model.AdditionalVoiceDataMetaInformation</span>
                 }
             }
           }
   
     </div>
-    <br />
+    <br />  
 
-    <div class="form-group row">
-        <span>Translation</span>
-        <InputTextArea readonly="readonly" placeholder="The translated text target language" @bind-Value="Model!.TranslatedText" rows="5"></InputTextArea>
+    <ul class="nav nav-tabs" id="myTab"> <!-- Had to include Bootstrap 5 js to make tabs work here, see index.html file -->
+        <li class="nav-item">
+            <a href="#home" class="nav-link active" data-bs-toggle="tab">Translation</a>
+        </li>
+        <li class="nav-item">
+            <a href="#profile" class="nav-link" data-bs-toggle="tab">Transcript</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="home">
+            <h4 class="mt-8">Translated text</h4>
+            <InputTextArea class="outputTranslationTextArea" readonly="readonly" placeholder="The translated text target language" @bind-Value="Model!.TranslatedText" rows="5"></InputTextArea>
+        </div>
+        <div class="tab-pane fade" id="profile">
+            <h4 class="mt-8">Transcript</h4>
+            <InputTextArea class="outputTranslationTextArea" readonly="readonly" placeholder="Transcript of the voice audio data" @bind-Value="Model!.Transcript" rows="5"></InputTextArea>
+        </div>
     </div>
 
     <button type="submit" class="submitButton">Submit</button>
@@ -147,6 +162,10 @@
         TextToSpeechResult textToSpeechResult = await TextToSpeechUtil.GetSpeechFromText(Model.TranslatedText, Model.TargetLanguage, actorVoices);
 
         Model.ActiveVoiceActorId = textToSpeechResult.VoiceActorId;
+
+        Model.Transcript = textToSpeechResult.Transcript;
+
+        Model.AdditionalVoiceDataMetaInformation = $"Byte size voice data: {textToSpeechResult?.VoiceData?.Length}, Audio output format: {textToSpeechResult.OutputFormat}";
 
         var voiceFolder = Path.Combine(FileSystem.Current.AppDataDirectory, "Resources", "Raw");
         if (!Directory.Exists(voiceFolder))

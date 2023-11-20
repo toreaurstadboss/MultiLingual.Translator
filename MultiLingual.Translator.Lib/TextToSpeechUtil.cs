@@ -107,6 +107,7 @@ namespace MultiLingual.Translator.Lib
             string tokenEndpointUrl = _configuration[TextToSpeechIssueTokenEndpoint];
             var response = await httpClient.PostAsync(tokenEndpointUrl, new StringContent("{}"));
             _token = (await response.Content.ReadAsStringAsync()).ToSecureString();
+            _lastTimeTokenFetched = DateTime.Now;
             return _token.ToNormalString();
         }
 

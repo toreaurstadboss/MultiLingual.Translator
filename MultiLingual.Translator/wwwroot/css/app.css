@@ -63,10 +63,16 @@ a, .btn-link {
     content: "An error has occurred."
 }
 
+.outputTranslationTextArea {
+    width:800px !important;
+    font-size: 12pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .languageLabelText {
     font-weight:bold;
     color:darkblue;
-    font-size:24pt;
+    font-size:12pt;
     background-color:silver;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -83,9 +89,9 @@ a, .btn-link {
 }
 
 .flagIcon {
-    margin: 20px 2px 10px 2px;
-    width: 100px;
-    height: 50px;
+    margin: 10px 2px 10px 2px;
+    width: 60px;
+    height: 25px;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
