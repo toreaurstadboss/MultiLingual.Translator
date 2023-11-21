@@ -1,23 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
-    <PropertyGroup>
-        <TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
-        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+   <PropertyGroup>
+        <TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
         <!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
-        <!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
+        <!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
+
+        <!-- Note for MacCatalyst:
+            The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
+            When specifying both architectures, use the plural <RuntimeIdentifiers> instead of the singular <RuntimeIdentifier>.
+            The Mac App Store will NOT accept apps with ONLY maccatalyst-arm64 indicated;
+            either BOTH runtimes must be indicated or ONLY macatalyst-x64. -->
+        <!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
+
         <OutputType>Exe</OutputType>
         <RootNamespace>MultiLingual.Translator</RootNamespace>
         <UseMaui>true</UseMaui>
         <SingleProject>true</SingleProject>
         <ImplicitUsings>enable</ImplicitUsings>
         <EnableDefaultCssItems>false</EnableDefaultCssItems>
+        <Nullable>enable</Nullable>
 
         <!-- Display name -->
         <ApplicationTitle>MultiLingual.Translator</ApplicationTitle>
 
         <!-- App Identifier -->
-        <ApplicationId>com.companyname.multilingual.translator</ApplicationId>
-        <ApplicationIdGuid>56E8B49C-D501-4AF0-B815-523C84065EC2</ApplicationIdGuid>
+        <ApplicationId>com.companyname.mauiapp1</ApplicationId>
 
         <!-- Versions -->
         <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -51,6 +59,7 @@
 
     <ItemGroup>
       <Content Remove="Resources\Raw\voicebook.json" />
+      <Content Remove="wwwroot\images\flags\png100px\nb - Copy.png" />
       <Content Remove="wwwroot\images\flags\png100px\nb.png" />
     </ItemGroup>
 
@@ -232,6 +241,7 @@
 	  <None Include="wwwroot\images\flags\png100px\my.png" />
 	  <None Include="wwwroot\images\flags\png100px\mz.png" />
 	  <None Include="wwwroot\images\flags\png100px\na.png" />
+	  <None Include="wwwroot\images\flags\png100px\nb - Copy.png" />
 	  <None Include="wwwroot\images\flags\png100px\nc.png" />
 	  <None Include="wwwroot\images\flags\png100px\ne.png" />
 	  <None Include="wwwroot\images\flags\png100px\nf.png" />
