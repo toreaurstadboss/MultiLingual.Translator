@@ -61,6 +61,8 @@
       <Content Remove="Resources\Raw\voicebook.json" />
       <Content Remove="wwwroot\images\flags\png100px\nb.png" />
       <Content Remove="wwwroot\images\flags\png100px\nb2.png" />
+      <Content Remove="wwwroot\images\flags\png100px\sv.png" />
+      <Content Remove="wwwroot\images\flags\png100px\sv2.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -281,6 +283,9 @@
 	  <None Include="wwwroot\images\flags\png100px\sb.png" />
 	  <None Include="wwwroot\images\flags\png100px\sc.png" />
 	  <None Include="wwwroot\images\flags\png100px\sd.png" />
+	  <None Include="wwwroot\images\flags\png100px\sv.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
 	  <None Include="wwwroot\images\flags\png100px\se.png" />
 	  <None Include="wwwroot\images\flags\png100px\sg.png" />
 	  <None Include="wwwroot\images\flags\png100px\sh.png" />
@@ -294,7 +299,7 @@
 	  <None Include="wwwroot\images\flags\png100px\sr.png" />
 	  <None Include="wwwroot\images\flags\png100px\ss.png" />
 	  <None Include="wwwroot\images\flags\png100px\st.png" />
-	  <None Include="wwwroot\images\flags\png100px\sv.png" />
+	  <None Include="wwwroot\images\flags\png100px\sv2.png" />
 	  <None Include="wwwroot\images\flags\png100px\sx.png" />
 	  <None Include="wwwroot\images\flags\png100px\sy.png" />
 	  <None Include="wwwroot\images\flags\png100px\sz.png" />
