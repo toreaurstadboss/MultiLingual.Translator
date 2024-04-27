@@ -76,8 +76,9 @@ namespace MultiLingual.Translator.Lib
             {
                 return null;
             }
-            var cultureMatchedViaCultureInfoNameSecondPart = _allCultures.FirstOrDefault(c => !string.IsNullOrWhiteSpace(c.Name) 
-            && c.Name.Contains("-") && c.Name.Split("-")[0].Contains(iso6391, StringComparison.InvariantCultureIgnoreCase));
+            var cultureMatchedViaCultureInfoNameSecondPart = _allCultures.FirstOrDefault(c => 
+                !string.IsNullOrWhiteSpace(c.Name) && c.Name.Contains("-") && c.Name.ToLower()
+                .Split("-").Any(x => x.Contains(iso6391, StringComparison.InvariantCultureIgnoreCase)));
             return await Task.FromResult(cultureMatchedViaCultureInfoNameSecondPart?.Name?.Split("-")[1]?.ToLower());
         }
 
