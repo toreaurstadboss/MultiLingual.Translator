@@ -31,6 +31,7 @@ namespace MultiLingual.Translator.Pages
             }
             var detectedLanguage = await DetectLangUtil.DetectLanguage(Model.InputText);
             Model.DetectedLanguageInfo = $"{detectedLanguage.Iso6391Name} {detectedLanguage.Name}";
+            Model.DetectedLanguageName = detectedLanguage.Name;
             Model.DetectedLanguageIso6391 = detectedLanguage.Iso6391Name;
 
             Model.DetectedLanguageCountryCode = await DetectLangUtil.DetectCountryCode(detectedLanguage.Iso6391Name);
@@ -74,15 +75,26 @@ namespace MultiLingual.Translator.Pages
             return actorVoices ?? Array.Empty<TextToSpeechLanguage>();
         }
 
+        private async void SwapInputTextWithTranslation()
+        {
+            var inputtedText = Model.InputText;
+            Model.InputText = Model.TranslatedText ?? string.Empty;
+            Model.TranslatedText = inputtedText;
+            Model.TargetLanguage = Model.DetectedLanguageIso6391;
+            await Task.Delay(10);
+            SpeakText(); //update voice actors available and other state, then do a StateHasChanged to be sure everything is prepared after the 'swap' of languages
+        }
+
         private string? ConvertTargetLanguage(NameValue targetLanguage) => targetLanguage?.Value;
 
         private async Task<IEnumerable<NameValue>> SearchAvailableLanguages(string searchText)
         {
             if (!string.IsNullOrEmpty(searchText))
             {
-                return LanguageCodes.Where(l => l?.Name?.Contains(searchText, StringComparison.InvariantCultureIgnoreCase) == true).ToList();
+                return await Task.FromResult(LanguageCodes.Where(l => l?.Name?
+                    .Contains(searchText, StringComparison.InvariantCultureIgnoreCase) == true).ToList());
             }
-            return LanguageCodes;
+            return await Task.FromResult(LanguageCodes);
         }
 
         private async void SpeakText()

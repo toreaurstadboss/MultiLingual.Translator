@@ -59,8 +59,8 @@
 
     <ItemGroup>
       <Content Remove="Resources\Raw\voicebook.json" />
-      <Content Remove="wwwroot\images\flags\png100px\nb - Copy.png" />
       <Content Remove="wwwroot\images\flags\png100px\nb.png" />
+      <Content Remove="wwwroot\images\flags\png100px\nb2.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -241,13 +241,16 @@
 	  <None Include="wwwroot\images\flags\png100px\my.png" />
 	  <None Include="wwwroot\images\flags\png100px\mz.png" />
 	  <None Include="wwwroot\images\flags\png100px\na.png" />
+	  <None Include="wwwroot\images\flags\png100px\nb2.png" />
 	  <None Include="wwwroot\images\flags\png100px\nc.png" />
 	  <None Include="wwwroot\images\flags\png100px\ne.png" />
 	  <None Include="wwwroot\images\flags\png100px\nf.png" />
 	  <None Include="wwwroot\images\flags\png100px\ng.png" />
 	  <None Include="wwwroot\images\flags\png100px\ni.png" />
 	  <None Include="wwwroot\images\flags\png100px\nl.png" />
-	  <None Include="wwwroot\images\flags\png100px\nb.png" />
+	  <None Include="wwwroot\images\flags\png100px\nb.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
 	  <None Include="wwwroot\images\flags\png100px\no.png" />
 	  <None Include="wwwroot\images\flags\png100px\np.png" />
 	  <None Include="wwwroot\images\flags\png100px\nr.png" />

@@ -10,9 +10,9 @@
 
         public string? DetectedLanguageCountryCode { get; set; }
 
-        public string? TargetLanguage { get; set; }
+        public string? DetectedLanguageName { get; set; }
 
-        public string? SelectedTargetLanguage { get; set; }
+        public string? TargetLanguage { get; set; }
 
         public string? TranslatedText { get; set; }
 

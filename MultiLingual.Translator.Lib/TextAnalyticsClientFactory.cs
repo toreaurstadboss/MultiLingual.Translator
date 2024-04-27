@@ -1,7 +1,6 @@
 ﻿using Azure;
 using Azure.AI.TextAnalytics;
 using Azure.AI.Translation.Text;
-using System;
 
 namespace MultiLingual.Translator.Lib
 {
