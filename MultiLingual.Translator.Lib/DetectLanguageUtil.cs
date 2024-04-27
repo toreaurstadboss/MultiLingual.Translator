@@ -1,4 +1,5 @@
 ﻿using Azure.AI.TextAnalytics;
+using MultiLingual.Translator.Lib.Models;
 using System.Globalization;
 
 namespace MultiLingual.Translator.Lib
@@ -65,12 +66,22 @@ namespace MultiLingual.Translator.Lib
             return detectedLanguage.ConfidenceScore;
         }
 
+        public async Task<string?> GetLanguageCode(string? detectedLanguageName)
+        {
+            if (string.IsNullOrWhiteSpace(detectedLanguageName))
+            {
+                return null;
+            }
+            var languages = typeof(LanguageCode).GetFields(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
+            return await Task.FromResult(languages.FirstOrDefault(l => l.Name.Equals(detectedLanguageName, StringComparison.InvariantCultureIgnoreCase))?.GetValue(null)?.ToString());
+        }
+
         /// <summary>
         /// Detects country code from iso6391 code
         /// </summary>
         /// <param name="iso6391"></param>
         /// <returns></returns>
-        public async Task<string?> DetectCountryCode(string? iso6391)
+        public async Task<string?> GetCountryCode(string? iso6391)
         {
             if (iso6391 == null)
             {

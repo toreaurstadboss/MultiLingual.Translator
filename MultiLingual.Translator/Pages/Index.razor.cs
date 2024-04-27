@@ -34,7 +34,7 @@ namespace MultiLingual.Translator.Pages
             Model.DetectedLanguageName = detectedLanguage.Name;
             Model.DetectedLanguageIso6391 = detectedLanguage.Iso6391Name;
 
-            Model.DetectedLanguageCountryCode = await DetectLangUtil.DetectCountryCode(detectedLanguage.Iso6391Name);
+            Model.DetectedLanguageCountryCode = await DetectLangUtil.GetCountryCode(detectedLanguage.Iso6391Name);
 
             if (_client == null)
             {
@@ -78,9 +78,9 @@ namespace MultiLingual.Translator.Pages
         private async void SwapInputTextWithTranslation()
         {
             var inputtedText = Model.InputText;
-            Model.InputText = Model.TranslatedText ?? string.Empty;
             Model.TranslatedText = inputtedText;
-            Model.TargetLanguage = Model.DetectedLanguageIso6391;
+            Model.InputText = Model.TranslatedText ?? string.Empty;
+            Model.TargetLanguage = await DetectLangUtil.GetLanguageCode(Model.DetectedLanguageName);
             await Task.Delay(10);
             SpeakText(); //update voice actors available and other state, then do a StateHasChanged to be sure everything is prepared after the 'swap' of languages
         }

@@ -33,7 +33,7 @@
     <br />
     
     <div class="form-group row">
-        <span>Translate into language</span>
+        <span>Translate into language</span>   <span>Selected translation language: @Model.TargetLanguage</span>
        <Blazored.Typeahead.BlazoredTypeahead placeholder="Select target language"
             ConvertMethod="(NameValue targetLanguage) => targetLanguage?.Value"
             EnableDropDown="true"
