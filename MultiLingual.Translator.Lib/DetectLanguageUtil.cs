@@ -1,4 +1,5 @@
 ﻿using Azure.AI.TextAnalytics;
+using System.Globalization;
 
 namespace MultiLingual.Translator.Lib
 {
@@ -8,9 +9,12 @@ namespace MultiLingual.Translator.Lib
 
         private TextAnalyticsClient _client;
 
+        private CultureInfo[] _allCultures;
+
         public DetectLanguageUtil()
         {
             _client = TextAnalyticsClientFactory.CreateClient();
+            _allCultures = CultureInfo.GetCultures(CultureTypes.AllCultures);
         }
 
         /// <summary>
@@ -59,6 +63,22 @@ namespace MultiLingual.Translator.Lib
         {
             DetectedLanguage detectedLanguage = await DetectLanguage(inputText);
             return detectedLanguage.ConfidenceScore;
+        }
+
+        /// <summary>
+        /// Detects country code from iso6391 code
+        /// </summary>
+        /// <param name="iso6391"></param>
+        /// <returns></returns>
+        public async Task<string?> DetectCountryCode(string? iso6391)
+        {
+            if (iso6391 == null)
+            {
+                return null;
+            }
+            var cultureMatchedViaCultureInfoNameSecondPart = _allCultures.FirstOrDefault(c => !string.IsNullOrWhiteSpace(c.Name) 
+            && c.Name.Contains("-") && c.Name.Split("-")[0].Contains(iso6391, StringComparison.InvariantCultureIgnoreCase));
+            return await Task.FromResult(cultureMatchedViaCultureInfoNameSecondPart?.Name?.Split("-")[1]?.ToLower());
         }
 
     }

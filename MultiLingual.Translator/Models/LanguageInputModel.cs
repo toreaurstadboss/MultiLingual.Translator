@@ -8,6 +8,8 @@
 
         public string? DetectedLanguageIso6391 { get; set; }
 
+        public string? DetectedLanguageCountryCode { get; set; }
+
         public string? TargetLanguage { get; set; }
 
         public string? SelectedTargetLanguage { get; set; }

@@ -13,7 +13,7 @@ namespace MultiLingual.Translator.Pages
         private Azure.AI.TextAnalytics.TextAnalyticsClient? _client;
         private InputTextArea? inputTextRef;
         public LanguageInputModel Model { get; set; } = new();
-        private string FlagIcon => $"images/flags/png100px/{Model.DetectedLanguageIso6391}.png";      
+        private string FlagIcon => $"images/flags/png100px/{Model.DetectedLanguageCountryCode}.png";      
         private string TargetFlagIcon => $"images/flags/png100px/{Model.TargetLanguage}.png";
 
         private List<NameValue> LanguageCodes = typeof(LanguageCode).GetFields().Select(f => new NameValue
@@ -32,6 +32,9 @@ namespace MultiLingual.Translator.Pages
             var detectedLanguage = await DetectLangUtil.DetectLanguage(Model.InputText);
             Model.DetectedLanguageInfo = $"{detectedLanguage.Iso6391Name} {detectedLanguage.Name}";
             Model.DetectedLanguageIso6391 = detectedLanguage.Iso6391Name;
+
+            Model.DetectedLanguageCountryCode = await DetectLangUtil.DetectCountryCode(detectedLanguage.Iso6391Name);
+
             if (_client == null)
             {
                 _client = TextAnalyticsClientFactory.CreateClient();
