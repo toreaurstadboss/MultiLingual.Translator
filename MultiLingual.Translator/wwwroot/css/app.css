@@ -95,6 +95,11 @@ a, .btn-link {
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
+.blazored-typeahead__results {
+    width: 40%; /* Adjust as needed */
+    background-color:snow;
+}
+
 @supports (-webkit-touch-callout: none) {
     .status-bar-safe-area {
         display: flex;
