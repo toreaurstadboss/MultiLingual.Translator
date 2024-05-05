@@ -98,7 +98,7 @@ namespace MultiLingual.Translator.Pages
             return await Task.FromResult(LanguageCodes);
         }
 
-        private async void SpeakText()
+        private async Task<TextToSpeechResult> PrepareSpeakText()
         {
             await Submit();
             var actorVoices = await GetActorVoices();
@@ -108,13 +108,39 @@ namespace MultiLingual.Translator.Pages
             Model.Transcript = textToSpeechResult.Transcript;
             Model.AvailableVoiceActorIds = textToSpeechResult.AvailableVoiceActorIds;
             Model.AdditionalVoiceDataMetaInformation = $"Byte size voice data: {textToSpeechResult?.VoiceData?.Length}, Audio output format: {textToSpeechResult.OutputFormat}";
+            StateHasChanged();
+            return textToSpeechResult;
+        }
 
+        private async void SpeakText()
+        {
+            TextToSpeechResult textToSpeechResult = await PrepareSpeakText();
+            var audioFileStream = await CreateVoiceStream(textToSpeechResult);
+            PlayVoiceStream(audioFileStream);
+            StateHasChanged();
+        }
+
+        private void PlayVoiceStream(Stream? audioFileStream)
+        {
+            if (audioFileStream != null)
+            {
+                var player = AudioManager.CreatePlayer(audioFileStream);
+                player.Play();
+            }
+        }
+
+        private async Task<Stream?> CreateVoiceStream(TextToSpeechResult textToSpeechResult)
+        {
+            if (textToSpeechResult == null)
+            {
+                return null;
+            }
             var voiceFolder = Path.Combine(FileSystem.Current.AppDataDirectory, "Resources", "Raw");
             if (!Directory.Exists(voiceFolder))
             {
                 Directory.CreateDirectory(voiceFolder);
             }
-            if (textToSpeechResult != null)
+            if (textToSpeechResult?.VoiceData != null)
             {
                 string voiceFile = "textToSpeechVoiceOutput_" + Model.TargetLanguage + Guid.NewGuid().ToString("N") + ".mpga";
                 string voiceRelativeFile = Path.Combine(voiceFile);
@@ -122,14 +148,11 @@ namespace MultiLingual.Translator.Pages
                 string voiceFileFullPath = Path.Combine(voiceFolder, voiceFile);
                 await File.WriteAllBytesAsync(voiceFileFullPath, textToSpeechResult.VoiceData);
                 Stream voiceStream = File.OpenRead(voiceFileFullPath);
+                return voiceStream;
 
-                var player = AudioManager.CreatePlayer(voiceStream);
-                player.Play();
+             
             }
-
-            StateHasChanged();
-
-          
+            return null;
         }
 
     }
