@@ -98,7 +98,7 @@
             <h4 class="mt-8">Translated text</h4>
             <InputTextArea class="outputTranslationTextArea" readonly="readonly" placeholder="The translated text target language" @bind-Value="Model!.TranslatedText" rows="5"></InputTextArea>
         </div>
-        <div class="tab-pane fade" id="profile">
+        <div class="tab-pane fade" id="profile" @onselect="() => PrepareSpeakText()">
             <h4 class="mt-8">Transcript</h4>
             <InputTextArea class="outputTranslationTextArea" readonly="readonly" placeholder="Transcript of the voice audio data" @bind-Value="Model!.Transcript" rows="5"></InputTextArea>
         </div>
