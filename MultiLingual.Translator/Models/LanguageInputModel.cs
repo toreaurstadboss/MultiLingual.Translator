@@ -20,7 +20,11 @@
 
         public string? PreferredVoiceActorId { get; set; }
 
+        public string? PreferredVoiceStyle { get; set; }
+
         public List<string> AvailableVoiceActorIds { get; set; } = new();
+
+        public List<string> AvailableVoiceStyles { get; set; } = new();
 
         public string? AdditionalVoiceDataMetaInformation { get; set; }
 

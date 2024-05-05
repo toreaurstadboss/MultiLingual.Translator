@@ -62,6 +62,18 @@
                 <button @onclick="SwapInputTextWithTranslation" style="margin-top:20px;width:300px;font-weight:600;height:40px;color:darkgreen;background-color:lightgreen;border-radius:12px;">
                     Swap translation to input text &#8593;&#8595;
                 </button>
+                @if (Model.AvailableVoiceActorIds?.Any() == true)
+                {
+                    <label>Voice style</label> 
+                    <InputSelect placeholder="Select voice style" @bind-Value="Model!.PreferredVoiceStyle">
+                        @foreach (var voiceStyle in Model.AvailableVoiceStyles)
+                        {
+                            <option value="@voiceStyle">
+                                @voiceStyle
+                            </option>
+                        }
+                    </InputSelect>
+                }
                 @if (!string.IsNullOrWhiteSpace(Model.ActiveVoiceActorId))
                 {
                     <span>Voice Actor Id: @Model.ActiveVoiceActorId</span>

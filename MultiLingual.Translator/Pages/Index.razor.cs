@@ -108,6 +108,7 @@ namespace MultiLingual.Translator.Pages
             Model.ActiveVoiceActorId = textToSpeechResult.VoiceActorId;
             Model.Transcript = textToSpeechResult.Transcript;
             Model.AvailableVoiceActorIds = textToSpeechResult.AvailableVoiceActorIds;
+            Model.AvailableVoiceStyles = await TextToSpeechUtil.GetVoiceStyles();
             Model.AdditionalVoiceDataMetaInformation = $"Byte size voice data: {textToSpeechResult?.VoiceData?.Length}, Audio output format: {textToSpeechResult.OutputFormat}";
             StateHasChanged();
             return textToSpeechResult;

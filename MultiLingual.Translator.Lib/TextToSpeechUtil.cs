@@ -1,7 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using MultiLingual.Translator.Lib.Models;
+using System;
 using System.Security;
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MultiLingual.Translator.Lib
 {
@@ -114,6 +116,49 @@ namespace MultiLingual.Translator.Lib
             _token = (await response.Content.ReadAsStringAsync()).ToSecureString();
             _lastTimeTokenFetched = DateTime.Now;
             return _token.ToNormalString();
+        }
+
+        public async Task<List<string>> GetVoiceStyles()
+        {
+            var voiceStyles = new List<string>
+            {
+                "normal-neutral",
+                "advertisement_upbeat",
+                "affectionate",
+                "angry",
+                "assistant",
+                "calm",
+                "chat",
+                "cheerful",
+                "customerservice",
+                "depressed",
+                "disgruntled",
+                "documentary-narration",
+                "embarrassed",
+                "empathetic",
+                "envious",
+                "excited",
+                "fearful",
+                "friendly",
+                "gentle",
+                "hopeful",
+                "lyrical",
+                "narration-professional",
+                "narration-relaxed",
+                "newscast",
+                "newscast-casual",
+                "newscast-formal",
+                "poetry-reading",
+                "sad",
+                "serious",
+                "shouting",
+                "sports_commentary",
+                "sports_commentary_excited",
+                "whispering",
+                "terrified",
+                "unfriendly"
+            };
+            return await Task.FromResult(voiceStyles);
         }
 
         private const string OcpApiSubscriptionKeyHeaderName = "Ocp-Apim-Subscription-Key";
