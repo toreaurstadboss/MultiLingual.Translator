@@ -103,7 +103,8 @@ namespace MultiLingual.Translator.Pages
         {
             await Submit();
             var actorVoices = await GetActorVoices();
-            TextToSpeechResult textToSpeechResult = await TextToSpeechUtil.GetSpeechFromText(Model.TranslatedText, Model.TargetLanguage, actorVoices, Model.PreferredVoiceActorId);
+            TextToSpeechResult textToSpeechResult = await TextToSpeechUtil.GetSpeechFromText(Model.TranslatedText, Model.TargetLanguage, 
+                actorVoices, Model.PreferredVoiceActorId, Model.PreferredVoiceStyle);
 
             Model.ActiveVoiceActorId = textToSpeechResult.VoiceActorId;
             Model.Transcript = textToSpeechResult.Transcript;
