@@ -84,7 +84,7 @@
                 {
                     <span>Select voice actor in language:</span>
                     <InputSelect placeholder="Choose the target voice actor" @bind-Value="Model!.PreferredVoiceActorId">
-                        @foreach (var actor in Model.AvailableVoiceActorIds)
+                        @foreach (var actor in Model.AvailableVoiceActorIds.OrderBy(a => a))
                         {
                             <option value="@actor">@actor</option>
                         }
