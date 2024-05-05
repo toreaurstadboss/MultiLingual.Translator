@@ -13,7 +13,7 @@ namespace MultiLingual.Translator.Pages
         private Azure.AI.TextAnalytics.TextAnalyticsClient? _client;
         private InputTextArea? inputTextRef;
         public LanguageInputModel Model { get; set; } = new();
-        private string FlagIcon => $"images/flags/png100px/{Model.DetectedLanguageCountryCode}.png";      
+        private string FlagIcon => $"images/flags/png100px/{Model.DetectedLanguageIso6391}.png";      
         private string TargetFlagIcon => $"images/flags/png100px/{Model.TargetLanguage}.png";
 
         private List<NameValue> LanguageCodes = typeof(LanguageCode).GetFields().Select(f => new NameValue
