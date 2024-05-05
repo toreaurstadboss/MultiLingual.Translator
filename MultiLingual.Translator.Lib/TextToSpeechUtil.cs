@@ -3,6 +3,7 @@ using MultiLingual.Translator.Lib.Models;
 using System;
 using System.Security;
 using System.Text;
+using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MultiLingual.Translator.Lib
@@ -15,11 +16,12 @@ namespace MultiLingual.Translator.Lib
             _configuration = configuration;
         }
 
-        public async Task<TextToSpeechResult> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices, string? preferredVoiceActorId)
+        public async Task<TextToSpeechResult> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices, 
+            string? preferredVoiceActorId, string? preferredVoiceStyle)
         {
             var result = new TextToSpeechResult();
 
-            result.Transcript = GetSpeechTextXml(text, language, actorVoices, preferredVoiceActorId, result);
+            result.Transcript = GetSpeechTextXml(text, language, actorVoices, preferredVoiceActorId, preferredVoiceStyle, result);
             result.ContentType = _configuration[TextToSpeechSpeechContentType];
             result.OutputFormat = _configuration[TextToSpeechSpeechXMicrosoftOutputFormat];
             result.UserAgent = _configuration[TextToSpeechSpeechUserAgent];
@@ -62,16 +64,45 @@ namespace MultiLingual.Translator.Lib
             return httpClient;
         }
        
-        private string GetSpeechTextXml(string text, string language, TextToSpeechLanguage[] actorVoices, string? preferredVoiceActorId, TextToSpeechResult result)
+        public string GetSpeechTextXml(string text, string language, TextToSpeechLanguage[] actorVoices, string? preferredVoiceActorId,
+              string? preferredVoiceStyle, TextToSpeechResult result)
         {
             result.VoiceActorId = ResolveVoiceActorId(language, preferredVoiceActorId, actorVoices);
             string speechXml = $@"
-            <speak version='1.0' xml:lang='en-US'>
-                <voice xml:lang='en-US' xml:gender='Male' name='Microsoft Server Speech Text to Speech Voice {result.VoiceActorId}'>
+            <speak version='1.0' xml:lang='en-US' xmlns:mstts='https://www.w3.org/2001/mstts'>
+                <voice xml:gender='Male' name='Microsoft Server Speech Text to Speech Voice {result.VoiceActorId}'>
                     <prosody rate='1'>{text}</prosody>
                 </voice>
             </speak>";
-            return speechXml;               
+
+            speechXml = AddVoiceStyleEffectIfDesired(preferredVoiceStyle, speechXml);
+
+            return speechXml;
+        }
+
+        /// <summary>
+        /// Adds voice style / expression to the SSML markup for the voice
+        /// </summary>
+        private static string AddVoiceStyleEffectIfDesired(string? preferredVoiceStyle, string speechXml)
+        {
+            if (!string.IsNullOrWhiteSpace(preferredVoiceStyle) && preferredVoiceStyle != "normal-neutral")
+            {
+                var voiceDoc = XDocument.Parse(speechXml); //https://learn.microsoft.com/nb-no/azure/ai-services/speech-service/speech-synthesis-markup-voice#use-speaking-styles-and-roles
+
+                XElement? prosody = voiceDoc.Descendants("prosody").FirstOrDefault();
+                if (prosody?.Value != null)
+                {
+                    // Create the <mstts:express-as> element, for now skip the ':' letter and replace at the end
+
+                    var expressedAsWrappedElement = new XElement("msttsexpress-as",
+                        new XAttribute("style", preferredVoiceStyle));
+                    expressedAsWrappedElement.Value = prosody!.Value;
+                    prosody?.ReplaceWith(expressedAsWrappedElement);
+                    speechXml = voiceDoc.ToString().Replace(@"msttsexpress-as", "mstts:express-as");
+                }
+            }
+
+            return speechXml;
         }
 
         private List<string> ResolveAvailableActorVoiceIds(string language, TextToSpeechLanguage[] actorVoices)

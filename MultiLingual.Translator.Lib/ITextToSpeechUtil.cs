@@ -7,6 +7,9 @@ namespace MultiLingual.Translator.Lib
         Task<TextToSpeechResult> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices, 
             string? preferredVoiceActorId, string? preferredVoiceStyle);
 
+        string GetSpeechTextXml(string text, string language, TextToSpeechLanguage[] actorVoices, string? preferredVoiceActorId,
+            string? preferredVoiceStyle, TextToSpeechResult result);
+
         Task<List<string>> GetVoiceStyles();
     }
 }
