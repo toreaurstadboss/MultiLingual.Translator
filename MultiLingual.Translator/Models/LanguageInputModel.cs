@@ -2,7 +2,7 @@
 {
     public class LanguageInputModel
     {
-        public string InputText { get; set; }
+        public string? InputText { get; set; }
 
         public string? DetectedLanguageInfo { get; set; }
 

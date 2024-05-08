@@ -4,7 +4,7 @@
     public class TextToSpeechLanguage
     {
        
-        public string LanguageKey { get; set; }
+        public string? LanguageKey { get; set; }
         public List<TextToSpeechLanguageVoiceItem> VoiceActors { get; set; } = new();
 
     }

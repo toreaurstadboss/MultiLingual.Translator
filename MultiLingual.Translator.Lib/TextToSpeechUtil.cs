@@ -16,7 +16,7 @@ namespace MultiLingual.Translator.Lib
             _configuration = configuration;
         }
 
-        public async Task<TextToSpeechResult> GetSpeechFromText(string text, string language, TextToSpeechLanguage[] actorVoices, 
+        public async Task<TextToSpeechResult?> GetSpeechFromText(string? text, string? language, TextToSpeechLanguage[] actorVoices, 
             string? preferredVoiceActorId, string? preferredVoiceStyle)
         {
             var result = new TextToSpeechResult();
@@ -32,7 +32,11 @@ namespace MultiLingual.Translator.Lib
 
             HttpClient httpClient = GetTextToSpeechWebClient(token);
 
-            string ttsEndpointUrl = _configuration[TextToSpeechSpeechEndpoint];
+            string? ttsEndpointUrl = _configuration[TextToSpeechSpeechEndpoint];
+            if (ttsEndpointUrl == null || result.ContentType == null)
+            {
+                return null;
+            }
             var response = await httpClient.PostAsync(ttsEndpointUrl, new StringContent(result.Transcript, Encoding.UTF8, result.ContentType));
 
             using (var memStream = new MemoryStream()) {
@@ -64,7 +68,7 @@ namespace MultiLingual.Translator.Lib
             return httpClient;
         }
        
-        public string GetSpeechTextXml(string text, string language, TextToSpeechLanguage[] actorVoices, string? preferredVoiceActorId,
+        public string GetSpeechTextXml(string? text, string? language, TextToSpeechLanguage[] actorVoices, string? preferredVoiceActorId,
               string? preferredVoiceStyle, TextToSpeechResult result)
         {
             result.VoiceActorId = ResolveVoiceActorId(language, preferredVoiceActorId, actorVoices);
@@ -105,22 +109,22 @@ namespace MultiLingual.Translator.Lib
             return speechXml;
         }
 
-        private List<string> ResolveAvailableActorVoiceIds(string language, TextToSpeechLanguage[] actorVoices)
+        private List<string> ResolveAvailableActorVoiceIds(string? language, TextToSpeechLanguage[] actorVoices)
         {
             if (actorVoices?.Any() == true)
             {
-                var voiceActorIds = actorVoices.Where(v => v.LanguageKey == language || v.LanguageKey.Split("-")[0] == language).SelectMany(v => v.VoiceActors).Select(v => v.VoiceId).ToList();
+                var voiceActorIds = actorVoices.Where(v => v.LanguageKey == language || v.LanguageKey?.Split("-")[0] == language).SelectMany(v => v.VoiceActors).Select(v => v.VoiceId).ToList();
                 return voiceActorIds;
             }
             return new List<string>();
         }
 
-        private string ResolveVoiceActorId(string language, string? preferredVoiceActorId, TextToSpeechLanguage[] actorVoices)
+        private string ResolveVoiceActorId(string? language, string? preferredVoiceActorId, TextToSpeechLanguage[] actorVoices)
         {
             string actorVoiceId = "(en-AU, NatashaNeural)"; //default to a select voice actor id 
             if (actorVoices?.Any() == true)
             {
-                var voiceActorsForLanguage = actorVoices.Where(v => v.LanguageKey == language || v.LanguageKey.Split("-")[0] == language).SelectMany(v => v.VoiceActors).Select(v => v.VoiceId).ToList();
+                var voiceActorsForLanguage = actorVoices.Where(v => v.LanguageKey == language || v.LanguageKey?.Split("-")[0] == language).SelectMany(v => v.VoiceActors).Select(v => v.VoiceId).ToList();
                 if (voiceActorsForLanguage != null)
                 {
                     if (voiceActorsForLanguage.Any() == true)
@@ -137,12 +141,16 @@ namespace MultiLingual.Translator.Lib
             return actorVoiceId;
         }
 
-        private async Task<string> GetIssuedToken()
+        private async Task<string?> GetIssuedToken()
         {
             var httpClient = new HttpClient();
             string? textToSpeechSubscriptionKey = Environment.GetEnvironmentVariable("AZURE_TEXT_SPEECH_SUBSCRIPTION_KEY", EnvironmentVariableTarget.Machine);
             httpClient.DefaultRequestHeaders.Add(OcpApiSubscriptionKeyHeaderName, textToSpeechSubscriptionKey);
-            string tokenEndpointUrl = _configuration[TextToSpeechIssueTokenEndpoint];
+            string? tokenEndpointUrl = _configuration[TextToSpeechIssueTokenEndpoint];
+            if (tokenEndpointUrl == null)
+            {
+                return null;
+            }
             var response = await httpClient.PostAsync(tokenEndpointUrl, new StringContent("{}"));
             _token = (await response.Content.ReadAsStringAsync()).ToSecureString();
             _lastTimeTokenFetched = DateTime.Now;
@@ -202,7 +210,7 @@ namespace MultiLingual.Translator.Lib
         private readonly IConfiguration _configuration;
 
         private DateTime? _lastTimeTokenFetched = null;
-        private SecureString _token = null;
+        private SecureString? _token = null;
 
     }
 }

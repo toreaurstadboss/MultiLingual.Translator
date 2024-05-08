@@ -345,6 +345,8 @@
 	<ItemGroup>
 	  <PackageReference Include="Blazored.Typeahead" Version="4.7.0" />
 	  <PackageReference Include="Plugin.Maui.Audio" Version="2.0.0" />
+	  <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.7" />
+	  <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.7" />
 	</ItemGroup>
 
 	<ItemGroup>

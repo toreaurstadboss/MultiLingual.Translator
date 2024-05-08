@@ -26,7 +26,7 @@ namespace MultiLingual.Translator.Pages
 
         private async Task<string> Submit()
         {
-            if (Model.TargetLanguage == null)
+            if (Model.TargetLanguage == null || Model.InputText == null)
             {
                 return string.Empty;
             }
@@ -99,25 +99,32 @@ namespace MultiLingual.Translator.Pages
             return await Task.FromResult(LanguageCodes);
         }
 
-        private async Task<TextToSpeechResult> PrepareSpeakText()
+        private async Task<TextToSpeechResult?> PrepareSpeakText()
         {
             await Submit();
             var actorVoices = await GetActorVoices();
-            TextToSpeechResult textToSpeechResult = await TextToSpeechUtil.GetSpeechFromText(Model.TranslatedText, Model.TargetLanguage, 
+            TextToSpeechResult? textToSpeechResult = await TextToSpeechUtil.GetSpeechFromText(Model.TranslatedText, Model.TargetLanguage, 
                 actorVoices, Model.PreferredVoiceActorId, Model.PreferredVoiceStyle);
 
-            Model.ActiveVoiceActorId = textToSpeechResult.VoiceActorId;
-            Model.Transcript = textToSpeechResult.Transcript;
-            Model.AvailableVoiceActorIds = textToSpeechResult.AvailableVoiceActorIds;
-            Model.AvailableVoiceStyles = await TextToSpeechUtil.GetVoiceStyles();
-            Model.AdditionalVoiceDataMetaInformation = $"Byte size voice data: {textToSpeechResult?.VoiceData?.Length}, Audio output format: {textToSpeechResult.OutputFormat}";
+            if (textToSpeechResult != null)
+            {
+                Model.ActiveVoiceActorId = textToSpeechResult.VoiceActorId;
+                Model.Transcript = textToSpeechResult.Transcript;
+                Model.AvailableVoiceActorIds = textToSpeechResult.AvailableVoiceActorIds;
+                Model.AvailableVoiceStyles = await TextToSpeechUtil.GetVoiceStyles();
+                Model.AdditionalVoiceDataMetaInformation = $"Byte size voice data: {textToSpeechResult?.VoiceData?.Length}, Audio output format: {textToSpeechResult?.OutputFormat}";
+            }
             StateHasChanged();
             return textToSpeechResult;
         }
 
         private async void SpeakText()
         {
-            TextToSpeechResult textToSpeechResult = await PrepareSpeakText();
+            TextToSpeechResult? textToSpeechResult = await PrepareSpeakText();
+            if (textToSpeechResult == null)
+            {
+                return;
+            }
             var audioFileStream = await CreateVoiceStream(textToSpeechResult);
             PlayVoiceStream(audioFileStream);
             StateHasChanged();
