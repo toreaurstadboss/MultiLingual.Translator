@@ -91,12 +91,22 @@ namespace MultiLingual.Translator.Pages
 
         private async Task<IEnumerable<NameValue>> SearchAvailableLanguages(string searchText)
         {
-            if (!string.IsNullOrEmpty(searchText))
+            if (!string.IsNullOrWhiteSpace(searchText))
             {
                 return await Task.FromResult(LanguageCodes.Where(l => l?.Name?
                     .Contains(searchText, StringComparison.InvariantCultureIgnoreCase) == true).ToList());
             }
             return await Task.FromResult(LanguageCodes);
+        }
+
+        private async Task<IEnumerable<NameValue>> SearchAvailableVoiceStyles(string searchText)
+        {
+            if (!string.IsNullOrWhiteSpace(searchText))
+            {
+                return await Task.FromResult(Model.AvailableVoiceStyles.Where(l => l
+                    .Contains(searchText, StringComparison.InvariantCultureIgnoreCase) == true).Select(vs => new NameValue { Name = vs, Value = vs}).ToList());
+            }
+            return await Task.FromResult(Model.AvailableVoiceStyles.Select(v => new NameValue { Name = v, Value = v }));
         }
 
         private async Task<TextToSpeechResult?> PrepareSpeakText()

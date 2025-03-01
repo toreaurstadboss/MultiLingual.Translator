@@ -65,14 +65,21 @@
                 @if (Model.AvailableVoiceActorIds?.Any() == true)
                 {
                     <label>Voice style</label> 
-                    <InputSelect placeholder="Select voice style" @bind-Value="Model!.PreferredVoiceStyle">
-                        @foreach (var voiceStyle in Model.AvailableVoiceStyles)
-                        {
-                            <option value="@voiceStyle">
-                                @voiceStyle
-                            </option>
-                        }
-                    </InputSelect>
+                    <Blazored.Typeahead.BlazoredTypeahead placeholder="Select voice style (to see all, just empty text and press SPACE)"
+                                                          ConvertMethod="(NameValue targetVoiceStyle) => targetVoiceStyle?.Value"
+                                                          EnableDropDown="true"
+                                                          Debounce="400"
+                                                          Context="VoiceStyleContext" 
+                                                          MaximumSuggestions="50"
+                                                          SearchMethod="SearchAvailableVoiceStyles"
+                                                          @bind-Value="Model.PreferredVoiceStyle">
+                        <SelectedTemplate Context="VoiceStyleContext">
+                            @VoiceStyleContext
+                        </SelectedTemplate>
+                        <ResultTemplate Context="VoiceStyleContext">
+                            @VoiceStyleContext.Name
+                        </ResultTemplate>
+                    </Blazored.Typeahead.BlazoredTypeahead>
                 }
                 @if (!string.IsNullOrWhiteSpace(Model.ActiveVoiceActorId))
                 {
