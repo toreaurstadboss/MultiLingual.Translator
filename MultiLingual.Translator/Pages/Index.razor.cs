@@ -109,6 +109,16 @@ namespace MultiLingual.Translator.Pages
             return await Task.FromResult(Model.AvailableVoiceStyles.Select(v => new NameValue { Name = v, Value = v }));
         }
 
+        private async Task<IEnumerable<NameValue>> SearchAvailableVoiceActors(string searchText)
+        {
+            if (!string.IsNullOrWhiteSpace(searchText))
+            {
+                return await Task.FromResult(Model.AvailableVoiceActorIds.Where(l => l
+                    .Contains(searchText, StringComparison.InvariantCultureIgnoreCase) == true).Select(vs => new NameValue { Name = vs, Value = vs }).ToList());
+            }
+            return await Task.FromResult(Model.AvailableVoiceActorIds.Select(v => new NameValue { Name = v, Value = v }));
+        }
+
         private async Task<TextToSpeechResult?> PrepareSpeakText()
         {
             await Submit();
