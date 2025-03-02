@@ -71,10 +71,10 @@ namespace MultiLingual.Translator.Lib
         public string GetSpeechTextXml(string? text, string? language, TextToSpeechLanguage[] actorVoices, string? preferredVoiceActorId,
               string? preferredVoiceStyle, TextToSpeechResult result)
         {
-            result.VoiceActorId = ResolveVoiceActorId(language, preferredVoiceActorId, actorVoices);
+            result.VoiceActorId = ResolveVoiceActorId(language, preferredVoiceActorId, actorVoices, out bool isFemale);
             string speechXml = $@"
             <speak version='1.0' xml:lang='en-US' xmlns:mstts='https://www.w3.org/2001/mstts'>
-                <voice xml:gender='Male' name='Microsoft Server Speech Text to Speech Voice {result.VoiceActorId}'>
+                <voice xml:gender='{(isFemale ? "Female" : "Male")}' name='Microsoft Server Speech Text to Speech Voice {result.VoiceActorId}'>
                     <prosody rate='1'>{text}</prosody>
                 </voice>
             </speak>";
@@ -119,25 +119,33 @@ namespace MultiLingual.Translator.Lib
             return new List<string>();
         }
 
-        private string ResolveVoiceActorId(string? language, string? preferredVoiceActorId, TextToSpeechLanguage[] actorVoices)
+        private string ResolveVoiceActorId(string? language, string? preferredVoiceActorId, 
+            TextToSpeechLanguage[] actorVoices, out bool isFemale)
         {
             string actorVoiceId = "(en-AU, NatashaNeural)"; //default to a select voice actor id 
             if (actorVoices?.Any() == true)
             {
-                var voiceActorsForLanguage = actorVoices.Where(v => v.LanguageKey == language || v.LanguageKey?.Split("-")[0] == language).SelectMany(v => v.VoiceActors).Select(v => v.VoiceId).ToList();
+                var voiceActorsForLanguage = actorVoices
+                    .Where(v => v.LanguageKey == language || v.LanguageKey?
+                    .Split("-")[0] == language)
+                    .SelectMany(v => v.VoiceActors).ToList();
                 if (voiceActorsForLanguage != null)
                 {
                     if (voiceActorsForLanguage.Any() == true)
                     {
-                        var resolvedPreferredVoiceActorId = voiceActorsForLanguage.FirstOrDefault(v => v == preferredVoiceActorId);
-                        if (!string.IsNullOrWhiteSpace(resolvedPreferredVoiceActorId))
+                        var resolvedPreferredVoiceActor = voiceActorsForLanguage.FirstOrDefault(v => v?.VoiceId == preferredVoiceActorId);
+                        if (!string.IsNullOrWhiteSpace(resolvedPreferredVoiceActor?.VoiceId))
                         {
-                            return resolvedPreferredVoiceActorId!;
+                            isFemale = resolvedPreferredVoiceActor!.IsFemale;
+                            return resolvedPreferredVoiceActor!.VoiceId!;
                         }
-                        actorVoiceId = voiceActorsForLanguage.First();
+                        actorVoiceId = voiceActorsForLanguage.First().VoiceId;
+                        isFemale = voiceActorsForLanguage.First().IsFemale;
                     }
                 }
             }
+            //default to female if we cannot decide the selected voice actor's gender (en-AU NatashaNeural is the default choice in this method if no selected voice actor was selected)
+            isFemale = true;
             return actorVoiceId;
         }
 

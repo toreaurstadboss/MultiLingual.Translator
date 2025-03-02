@@ -58,6 +58,15 @@
     </ItemGroup>
 
     <ItemGroup>
+      <AndroidResource Remove="Data\**" />
+      <Compile Remove="Data\**" />
+      <Content Remove="Data\**" />
+      <EmbeddedResource Remove="Data\**" />
+      <MauiXaml Remove="Data\**" />
+      <None Remove="Data\**" />
+    </ItemGroup>
+
+    <ItemGroup>
       <Content Remove="Resources\Raw\voicebook.json" />
       <Content Remove="wwwroot\images\flags\png100px\nb.png" />
       <Content Remove="wwwroot\images\flags\png100px\nb2.png" />
@@ -71,10 +80,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\MultiLingual.Translator.Lib\MultiLingual.Translator.Lib.csproj" />
-    </ItemGroup>
-
-	<ItemGroup>
-      <Folder Include="Data\" />
     </ItemGroup>
 
 	<ItemGroup>
